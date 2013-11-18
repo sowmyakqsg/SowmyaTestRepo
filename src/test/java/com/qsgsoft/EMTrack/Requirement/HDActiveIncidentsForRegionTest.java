@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 import java.util.Date;
 import java.util.Properties;
 
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
@@ -36,15 +35,6 @@ public class HDActiveIncidentsForRegionTest{
 	// Log4j object to write log entries to the Log files
 	static Logger log4j = Logger
 			.getLogger("com.qsgsoft.EMTrack.features.Req9319");
-
-	static {
-		System.setProperty("org.apache.commons.logging.Log",
-				"org.apache.commons.logging.impl.SimpleLog");
-		System.setProperty(
-				"org.apache.commons.logging.simplelog.log.org.apache.http",
-				"warn");
-		BasicConfigurator.configure();
-	}
 
 	// Objects to access the common functions
 	OfficeCommonFunctions objOFC;

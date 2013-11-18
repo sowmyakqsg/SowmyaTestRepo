@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -36,16 +35,6 @@ public class HDFilterSearchTest {
 	// Log4j object to write log entries to the Log files
 	static Logger log4j = Logger
 			.getLogger("com.qsgsoft.EMTrack.features.HDFilterSearch");
-
-	static {
-		System.setProperty("org.apache.commons.logging.Log",
-				"org.apache.commons.logging.impl.SimpleLog");
-		System.setProperty(
-				"org.apache.commons.logging.simplelog.log.org.apache.http",
-				"warn");
-		PropertyConfigurator
-				.configure("D:/Selenium/com.qsgsoft.EMTrack3.0/src/test/resources/PropertiesFiles/log4j.properties");
-	}
 
 	// Objects to access the common functions
 	OfficeCommonFunctions objOFC;
