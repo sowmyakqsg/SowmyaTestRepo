@@ -11,12 +11,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.qsgsoft.EMTrack.Shared.DashBoardPage;
-import com.qsgsoft.EMTrack.Shared.FiltersPage;
-import com.qsgsoft.EMTrack.Shared.IncidentsPage;
-import com.qsgsoft.EMTrack.Shared.LocatePage;
-import com.qsgsoft.EMTrack.Shared.LoginPage;
-import com.qsgsoft.EMTrack.Shared.PatientPage;
+import com.qsgsoft.EMTrack.Shared.*;
 import com.qsgsoft.EMTrack.Support.Date_Time_settings;
 import com.qsgsoft.EMTrack.Support.ElementId_properties;
 import com.qsgsoft.EMTrack.Support.OfficeCommonFunctions;
@@ -198,7 +193,6 @@ public class HDLocateClientsTest {
 	public void testBQS115748() throws Exception {
 		String strFuncResult = "";
 		LoginPage objLoginPage = new LoginPage();
-		PatientPage objPatientPage = new PatientPage();
 		LocatePage objLocatePage = new LocatePage();
 
 		try {
@@ -210,12 +204,6 @@ public class HDLocateClientsTest {
 			String varUserName = objrdExcel.ReadData("Login", 2, 1);
 			String varPassword = objrdExcel.ReadData("Login", 2, 2);
 			String strCriteria = "Tracking Status";
-			String strPatientID = "AutoPatientID" + System.currentTimeMillis();
-			String strGender = "Male";
-			String strDestination = "Alpena Regional Medical Center";
-			String strProvider = "Blackhawk Helicopter";
-			String strUnit = "123";
-			String strETA = "5";
 
 			log4j.info("~~~~~TEST CASE - " + gstrTCID
 					+ " EXECUTION STARTS~~~~~");
