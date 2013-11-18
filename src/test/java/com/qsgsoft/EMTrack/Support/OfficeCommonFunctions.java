@@ -339,7 +339,10 @@ public void WriteTestDatas(String[] strTestData,String strFilePath,String strShe
 		EnvDetails = objReadEnvironment.ReadEnvironment();
 
 		// WRITE RESULTS TO EXCEL UNDER ANY CONDITION WITHOUT CHECKING ANY FLAG.
-
+		String[] fileName = FILE_PATH.split("/");
+		File file = new File(fileName[fileName.length-1]);
+		String path = file.getAbsolutePath();
+		FILE_PATH = path.replaceAll(fileName[fileName.length-1], FILE_PATH);	
 		// Read the existing file
 		Workbook wb = Workbook.getWorkbook(new File(FILE_PATH));
 

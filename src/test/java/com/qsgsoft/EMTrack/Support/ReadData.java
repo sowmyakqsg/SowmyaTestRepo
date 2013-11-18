@@ -17,7 +17,11 @@ public class ReadData {
 			Paths_Properties objAP = new Paths_Properties();
 			Properties pathProps = objAP.Read_FilePath();
 						
-			String FILE_PATH =pathProps.getProperty("UserDetails_path");
+			String FILE_PATH =pathProps.getProperty("UserDetails_path");	
+			String[] fileName = FILE_PATH.split("/");
+			File file = new File(fileName[fileName.length-1]);
+			String path = file.getAbsolutePath();
+			FILE_PATH = path.replaceAll(fileName[fileName.length-1], FILE_PATH);	
 			Sheet ws = null;
 		
 			// Read the existing file
@@ -35,9 +39,15 @@ public class ReadData {
 		  {   
 		  
 		   Sheet ws = null;
-		  
+
+			String[] fileName = FILE_PATH.split("/");
+			File file = new File(fileName[fileName.length-1]);
+			String path = file.getAbsolutePath();
+			FILE_PATH = path.replaceAll(fileName[fileName.length-1], FILE_PATH);	
 		   // Read the existing file
 		   Workbook wb = Workbook.getWorkbook(new File(FILE_PATH));
+		   
+		   
 		   ws = wb.getSheet(SheetName);
 		   
 		   //Read content of the cell 
