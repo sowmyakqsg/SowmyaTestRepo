@@ -24,6 +24,6 @@ import com.qsgsoft.EMResource.features.*;
 
 })
 
-public class MainClassSmokeSuite {
+public class MainClassSmokeSuiteTest {
 	
 }

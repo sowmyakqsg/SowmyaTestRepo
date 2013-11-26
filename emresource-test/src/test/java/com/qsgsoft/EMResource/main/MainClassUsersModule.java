@@ -22,6 +22,6 @@ import com.qsgsoft.EMResource.features.*;
 	ProvideAccessToRegionsForUser.class,
 
 })
-public class MainClassUsersModuleTest {
+public class MainClassUsersModule {
 
 }
