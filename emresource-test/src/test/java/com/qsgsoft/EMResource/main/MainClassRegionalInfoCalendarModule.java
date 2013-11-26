@@ -7,11 +7,9 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Regional Info>> Calendar Module
-	CreateBulletinMessage.class,
-	EditBulletinMessage.class,
-	DeleteBulletinMessage.class,
-})
+		// Regional Info>> Calendar Module
+		CreateBulletinMessage.class, EditBulletinMessage.class,
+		DeleteBulletinMessage.class, })
 public class MainClassRegionalInfoCalendarModule {
 
 }

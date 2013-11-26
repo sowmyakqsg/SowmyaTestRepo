@@ -20,7 +20,6 @@ import com.qsgsoft.EMResource.features.*;
 	ProvideMultiRegnEventRightsForUsers.class,
 	UsersWithOverrideViewingRestrictionRight.class,
 	ProvideAccessToRegionsForUser.class,
-
 })
 public class MainClassUsersModule {
 

@@ -7,10 +7,8 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Preferences>> Change Password Module
-	    ChangePassword.class,
-	
-})
+// Preferences>> Change Password Module
+ChangePassword.class, })
 public class MainClassPreferencesChangePasswordModule {
 
 }

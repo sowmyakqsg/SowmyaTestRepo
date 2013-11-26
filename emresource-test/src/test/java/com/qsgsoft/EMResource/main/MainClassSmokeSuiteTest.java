@@ -21,9 +21,8 @@ import com.qsgsoft.EMResource.features.*;
 	Smoke_Events.class,		
 	Smoke_Setup.class,		
 	Smoke_Reports.class,
-
 })
 
 public class MainClassSmokeSuiteTest {
-	
+
 }

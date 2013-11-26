@@ -7,10 +7,8 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Preferences>> User Info Module
-	EditUserInformation.class,
-	
-})
+// Preferences>> User Info Module
+EditUserInformation.class, })
 public class MainClassPreferencesUserInfoModule {
 
 }

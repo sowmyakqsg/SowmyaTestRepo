@@ -7,10 +7,8 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // HAvBED 3.0 Module
-	PromtUserToSelectState.class,
-	
-})
+// HAvBED 3.0 Module
+PromtUserToSelectState.class, })
 public class MainClassHAvBEDModule {
 
 }

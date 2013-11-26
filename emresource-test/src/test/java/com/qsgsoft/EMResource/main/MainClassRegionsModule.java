@@ -7,10 +7,8 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Regions Module
-	CreateRegion.class,
-	ActivateSystemNotice.class,
-
+// Regions Module
+		CreateRegion.class, ActivateSystemNotice.class,
 })
 public class MainClassRegionsModule {
 

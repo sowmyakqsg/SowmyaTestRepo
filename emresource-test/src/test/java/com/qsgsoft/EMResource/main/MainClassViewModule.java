@@ -7,16 +7,10 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Views Module
-	SettingUpOfRegionViews.class,
-	SettingUpRegionViews.class,
-	CopyRegionView.class,
-	DeleteRegionView.class,
-	ViewResourceDetailScreen.class,
-	UpdateStatuScreen.class,
-	
-	
-})
+		// Views Module
+		SettingUpOfRegionViews.class, SettingUpRegionViews.class,
+		CopyRegionView.class, DeleteRegionView.class,
+		ViewResourceDetailScreen.class, UpdateStatuScreen.class, })
 public class MainClassViewModule {
 
 }

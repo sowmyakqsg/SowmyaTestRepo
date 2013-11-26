@@ -7,15 +7,12 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Multi Region Module
-	Notifications.class,
-	SetupCustomView.class,
-	DirectAccessToMultReg.class,
-	RegionWithMutualAgreementAndOtherRegionViewRight.class,
-	MultiRegionUserWithLoginAccessToMultipleRegions.class,
-	RegionsWithMutualAgreementAndDirectAccess.class,
-
-})
+		// Multi Region Module
+		Notifications.class, SetupCustomView.class,
+		DirectAccessToMultReg.class,
+		RegionWithMutualAgreementAndOtherRegionViewRight.class,
+		MultiRegionUserWithLoginAccessToMultipleRegions.class,
+		RegionsWithMutualAgreementAndDirectAccess.class, })
 public class MainClassMultiRegionModule {
 
 }

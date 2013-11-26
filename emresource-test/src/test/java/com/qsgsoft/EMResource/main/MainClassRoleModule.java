@@ -7,14 +7,11 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Role Module
-	CreateRoleAutoIT.class,
-	CreateRole.class,
-	RoleWithOverrideViewingRestrictionsright.class,
-	EditRole.class,
+	// Role Module
+	CreateRoleAutoIT.class, CreateRole.class,
+	RoleWithOverrideViewingRestrictionsright.class, EditRole.class,
 	RightsToViewUpdatePrivateStatusTypes.class,
 	RightToViewUpdateRoleBasedST.class,
-
 })
 public class MainClassRoleModule {
 

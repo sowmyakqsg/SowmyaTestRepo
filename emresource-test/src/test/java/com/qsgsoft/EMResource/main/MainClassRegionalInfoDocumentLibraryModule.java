@@ -7,14 +7,9 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 //Regional Info >> Document Library
-	AddDocument.class,
-	CreateFolder.class,
-	RenameFolder.class,
-	DeleteDocument.class,
-	DeleteFolder.class,
-	MoveADocument.class,
-	
+		// Regional Info >> Document Library
+		AddDocument.class, CreateFolder.class, RenameFolder.class,
+		DeleteDocument.class, DeleteFolder.class, MoveADocument.class,
 })
 public class MainClassRegionalInfoDocumentLibraryModule {
 

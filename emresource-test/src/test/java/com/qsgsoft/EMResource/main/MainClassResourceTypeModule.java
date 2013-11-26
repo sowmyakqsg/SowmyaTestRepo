@@ -7,14 +7,11 @@ import com.qsgsoft.EMResource.features.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
 
-	 // Resource Type Module
-	CreateResourceType.class,
-	EditResourceType.class,
+	// Resource Type Module
+	CreateResourceType.class, EditResourceType.class,
 	InActiveResourceType.class,
-	//Multiple browser
-	InactivateResourceType.class,
-	
-})
+	// Multiple browser
+	InactivateResourceType.class, })
 public class MainClassResourceTypeModule {
 
 }
