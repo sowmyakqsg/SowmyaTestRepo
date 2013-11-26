@@ -1,4 +1,4 @@
-﻿package com.qsgsoft.EMResource.main;
+package com.qsgsoft.EMResource.main;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
