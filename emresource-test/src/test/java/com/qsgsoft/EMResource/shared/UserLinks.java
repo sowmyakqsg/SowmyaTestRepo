@@ -8,6 +8,7 @@ import com.qsgsoft.EMResource.support.GetProcessList;
 import com.qsgsoft.EMResource.support.ReadEnvironment;
 import com.thoughtworks.selenium.Selenium;
 import static org.junit.Assert.*;
+import java.lang.Runtime;
 
 public class UserLinks {
 
