@@ -331,7 +331,6 @@ public class UserLinks {
 
 				log4j.info("Create New User Link page is displayed");
 
-				// Enter lable name
 				selenium.type(propElementDetails
 						.getProperty("UserLink.LinkName"), strLablText);
 
@@ -340,6 +339,7 @@ public class UserLinks {
 				File file = new File(fileName[fileName.length - 1]);
 				String path = file.getAbsolutePath();
 				strAutoFilePath = path.replaceAll(fileName[fileName.length - 1], strAutoFilePath);
+				strAutoFilePath = strAutoFilePath.replaceAll("\\\\", "/");
 				
 				fileName = strUploadFilePath.split("/");
 				file = new File(fileName[fileName.length - 1]);
