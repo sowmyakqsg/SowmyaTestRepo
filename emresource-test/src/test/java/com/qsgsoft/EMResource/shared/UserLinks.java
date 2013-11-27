@@ -1,5 +1,6 @@
 package com.qsgsoft.EMResource.shared;
 
+import java.io.File;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import com.qsgsoft.EMResource.support.ElementId_properties;
@@ -335,6 +336,16 @@ public class UserLinks {
 						.getProperty("UserLink.LinkName"), strLablText);
 
 				// Upload Image File
+				String[] fileName = strAutoFilePath.split("/");
+				File file = new File(fileName[fileName.length - 1]);
+				String path = file.getAbsolutePath();
+				strAutoFilePath = path.replaceAll(fileName[fileName.length - 1], strAutoFilePath);
+				
+				fileName = strUploadFilePath.split("/");
+				file = new File(fileName[fileName.length - 1]);
+				path = file.getAbsolutePath();
+				strUploadFilePath = path.replaceAll(fileName[fileName.length - 1], strUploadFilePath);
+				   
 				String strArgs[] = { strAutoFilePath, strUploadFilePath };
 				// Auto it to upload the file
 				Runtime.getRuntime().exec(strArgs);
