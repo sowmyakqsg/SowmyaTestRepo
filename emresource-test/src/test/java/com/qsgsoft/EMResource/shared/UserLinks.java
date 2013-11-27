@@ -344,7 +344,8 @@ public class UserLinks {
 				fileName = strUploadFilePath.split("/");
 				file = new File(fileName[fileName.length - 1]);
 				path = file.getAbsolutePath();
-				strUploadFilePath = path.replaceAll(fileName[fileName.length - 1], strUploadFilePath);
+				strUploadFilePath = path.replaceAll("\\\\"+fileName[fileName.length - 1], strUploadFilePath);
+				strUploadFilePath = strUploadFilePath.replaceAll("\\\\", "/");
 				   
 				String strArgs[] = { strAutoFilePath, strUploadFilePath };
 				// Auto it to upload the file
