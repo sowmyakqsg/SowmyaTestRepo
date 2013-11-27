@@ -24,7 +24,7 @@ import com.thoughtworks.selenium.Selenium;
 ' Modified Date                                      Modified By
 ' <Date>                           	                    <Name>
 '*****************************************************************/
-public class ResourceDetailReport {
+public class ResourceDetailReportTest {
 	Date gdtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger

@@ -16,7 +16,7 @@ import com.qsgsoft.EMResource.features.*;
 	StatusSummaryReport.class,
 	EventDetailReport.class,
 	EventSnapshotReport.class,
-	ResourceDetailReport.class,
+	ResourceDetailReportTest.class,
 	FormDetailReportUpdated.class,
 })
 public class MainClassReportsModule {

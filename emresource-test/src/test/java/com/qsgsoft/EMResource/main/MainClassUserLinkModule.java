@@ -11,7 +11,7 @@ import com.qsgsoft.EMResource.features.*;
 		FireFoxCreateQuickLinkForForm.class,
 		FireFoxCreateQuickLinkForWebsite.class,
 		FireFoxCreateUserLinkForForm.class,
-		FireFoxCreateUserLinkForWebsite.class, DeleteUserLink.class,
+		FireFoxCreateUserLinkForWebsite.class, DeleteUserLinkTest.class,
 		FirefoxEditUserLink.class,
 		// Forms
 		FirefoxEditNewFormQuestionnaire.class,

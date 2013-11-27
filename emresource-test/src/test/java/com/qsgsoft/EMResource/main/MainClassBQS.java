@@ -127,7 +127,7 @@ import com.qsgsoft.EMResource.features.*;
 		EventNotifications.class,
 
 		// AutoIt
-		AddDocument.class, DeleteDocument.class, DeleteUserLink.class,
+		AddDocument.class, DeleteDocument.class, DeleteUserLinkTest.class,
 		ImportResFromSpreadSheet.class, ImportUsersAndResources.class,
 		ImportUsersFromSpreadsheet.class, EventDetailReport.class,
 		EventSnapshotReport.class, MoveADocument.class,

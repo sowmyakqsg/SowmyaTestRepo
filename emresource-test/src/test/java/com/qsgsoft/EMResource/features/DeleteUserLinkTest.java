@@ -26,7 +26,7 @@ import org.apache.log4j.Logger;
 ' <Date>                           	         <Name>
 '*************************************************************/
 
-public class DeleteUserLink {
+public class DeleteUserLinkTest {
 	Date gdtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger

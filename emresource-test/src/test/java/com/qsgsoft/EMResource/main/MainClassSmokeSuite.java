@@ -23,6 +23,6 @@ import com.qsgsoft.EMResource.features.*;
 	Smoke_Reports.class,
 })
 
-public class MainClassSmokeSuiteTest {
+public class MainClassSmokeSuite {
 
 }
