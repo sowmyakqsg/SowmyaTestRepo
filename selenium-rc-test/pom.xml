@@ -28,8 +28,8 @@
 							<systemPropertyVariables>
 								<!-- The baseUrl can be parameterized and passed by the Jenkins Job 
 									or a parent POM -->
-								<geb.build.baseUrl>http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action</geb.build.baseUrl>
-								<geb.build.reportsDir>target/test-reports/geb</geb.build.reportsDir>
+								<emt.build.baseUrl>http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action</emt.build.baseUrl>
+								<emt.build.reportsDir>target/test-reports/geb</emt.build.reportsDir>
 							</systemPropertyVariables>
 						</configuration>
 					</plugin>
