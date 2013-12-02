@@ -4,7 +4,7 @@ import org.junit.Test;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
-public class SeleniumTest {
+public class SeleniumFuncSpec {
 	Selenium selenium;
 
 	@Test

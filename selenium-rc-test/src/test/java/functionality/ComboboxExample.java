@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverBackedSelenium;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 
 public class ComboboxExample {
@@ -83,8 +85,7 @@ public class ComboboxExample {
 		driver.manage().window().maximize();
 		String baseUrl = "https://emtrack-ng.qa.intermedix.com/";
 		selenium = new WebDriverBackedSelenium(driver, baseUrl);
-
-		// selenium.start();
+		
 		selenium.open("/app");
 		selenium.type("//input[@id='name']", "autoregadmin2");
 		selenium.type("//input[@id='password']", "abc123 ");
