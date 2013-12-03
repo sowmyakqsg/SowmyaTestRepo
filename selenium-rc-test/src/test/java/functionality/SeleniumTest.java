@@ -9,7 +9,7 @@ public class SeleniumTest {
 
 	@Test
 	public void test() {
-		selenium = new DefaultSelenium("localhost",65000,"*firefox","http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
+		selenium = new DefaultSelenium("localhost",4444,"*firefox","http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
 		selenium.start();
 		selenium.open("http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
 		selenium.windowMaximize();
