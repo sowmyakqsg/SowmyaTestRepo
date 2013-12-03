@@ -6,8 +6,6 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.BrowserVersionFeatures;
 
@@ -26,11 +24,10 @@ public class HeadlessDemo {
         }
     };
     
-    
 	@Test
 	public void test() {
-		WebDriver driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_17);
-		//WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_17);
+		WebDriver driver = new FirefoxDriver();
 		driver.get("http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
 		((HtmlUnitDriver) driver).setJavascriptEnabled(true);
 		driver.manage().window().maximize();
