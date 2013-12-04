@@ -26,8 +26,8 @@ public class HeadlessDemo {
     
 	@Test
 	public void test() {
-		//WebDriver driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_17);
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_17);
+		//WebDriver driver = new FirefoxDriver();
 		driver.get("http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
 		((HtmlUnitDriver) driver).setJavascriptEnabled(true);
 		driver.manage().window().maximize();
