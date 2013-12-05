@@ -30,7 +30,7 @@ public class ComboboxExample {
 
 	@Test
 	public void testCombo1() {
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		String baseUrl = "https://emtrack-ng.qa.intermedix.com/";
 		selenium = new WebDriverBackedSelenium(driver, baseUrl);
 
@@ -82,7 +82,7 @@ public class ComboboxExample {
 	
 	@Test
 	public void testDragAndDrop() {
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		String baseUrl = "https://emtrack-ng.qa.intermedix.com/";
 		selenium = new WebDriverBackedSelenium(driver, baseUrl);
 		

@@ -8,18 +8,19 @@ import pages.LoginPage;
 import pages.PreferencesPage;
 import pages.UserAdministrationPage;
 
-public class EMTHeadlessWebdriverJUnitTest{
+public class EMTHeadlessWebdriverJUnitTest {
 	WebDriver driver;
 	static {
-	    java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit")
+				.setLevel(java.util.logging.Level.OFF);
 	}
-	
+
 	@Before
 	public void setup() {
 		BrowserPreparationPage objBrowserPreparationPage = new BrowserPreparationPage();
 		driver = objBrowserPreparationPage.browserPreparationPage(driver);
 	}
-	
+
 	@After
 	public void closeBrowser() {
 		driver.close();

@@ -24,7 +24,7 @@ public class PreferencesPage {
 
 	public void clickUsersLink(WebDriver driver) {
 		WebElement preferencesLink = driver.findElement(By.linkText("Users"));
-		preferencesLink.isDisplayed();
+		//preferencesLink.isDisplayed();
 		preferencesLink.click();
 	}
 }

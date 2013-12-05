@@ -24,7 +24,7 @@ public class UserAdministrationPage {
 
 	public void clickNewUserLink(WebDriver driver) {
 		WebElement NewUserLink = driver.findElement(By.linkText("New User"));
-		NewUserLink.isDisplayed();
+		//NewUserLink.isDisplayed();
 		NewUserLink.click();
 	}
 }

@@ -24,7 +24,7 @@ public class DashboardPage {
 
 	public void clickPreferenceLink(WebDriver driver) {
 		WebElement preferencesLink = driver.findElement(By.linkText("Preferences"));
-		preferencesLink.isDisplayed();
+		//preferencesLink.isDisplayed();
 		preferencesLink.click();
 	}
 }

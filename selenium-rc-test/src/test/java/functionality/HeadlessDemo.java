@@ -30,7 +30,7 @@ public class HeadlessDemo {
 		//WebDriver driver = new FirefoxDriver();
 		driver.get("http://iaautoqa63.dyndns.org/exemplar/exemplar/Portal.action");
 		((HtmlUnitDriver) driver).setJavascriptEnabled(true);
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		assertEquals(driver.getTitle(),"Connecture Sales Demo");
 		System.out.println("Script passed");
 		System.out.println(((HtmlUnitDriver) driver).executeScript("return navigator.userAgent",""));

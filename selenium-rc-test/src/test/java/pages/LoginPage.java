@@ -28,9 +28,9 @@ public class LoginPage {
 		WebElement password = driver.findElement(By.id("password"));
 		WebElement loginBttn = driver.findElement(By.id("loginBttn"));
 		
-		username.isDisplayed();
-		password.isDisplayed();
-		loginBttn.isDisplayed();
+		//username.isDisplayed();
+		//password.isDisplayed();
+		//loginBttn.isDisplayed();
 		
 		username.sendKeys(strUsername);
 		password.sendKeys(strPassword);
