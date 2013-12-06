@@ -15,8 +15,9 @@ public class EMTHeadlessWebdriverJUnitTest {
 	WebDriver driver;
 
 	public static final File PHANTOMJS_EXE = new File(
-			System.getProperty("user.dir"),
+			System.getProperty("basedir"),
 			"phantomjs-1.9.2-windows/phantomjs.exe");
+	
 	static {
 		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit")
 				.setLevel(java.util.logging.Level.OFF);
@@ -26,6 +27,7 @@ public class EMTHeadlessWebdriverJUnitTest {
 	public void test() throws Exception {
 		DesiredCapabilities caps = new DesiredCapabilities();
         caps.setJavascriptEnabled(true); 
+        System.out.println(PHANTOMJS_EXE.getAbsolutePath());
         caps.setCapability(
         PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,PHANTOMJS_EXE.getAbsolutePath());
         driver = new PhantomJSDriver(caps);
