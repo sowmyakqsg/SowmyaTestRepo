@@ -51,6 +51,7 @@ import static org.junit.Assert.*;
 
 			selenium.click(propElementDetails.getProperty("Login.Submit"));
 			selenium.waitForPageToLoad(gstrTimeOut);
+			Thread.sleep(10000);
 			try {
 				selenium.selectWindow("");
 			} catch (Exception e) {
@@ -92,6 +93,7 @@ import static org.junit.Assert.*;
 			log4j.info("login function failed" + e);
 			strErrorMsg = "login function failed" + e;
 		}
+		strErrorMsg= "";
 		return strErrorMsg;
 	}
 
@@ -399,6 +401,7 @@ import static org.junit.Assert.*;
 
 			selenium.click(propElementDetails.getProperty("SelectRegion.Next"));
 			selenium.waitForPageToLoad(gstrTimeOut);
+			Thread.sleep(10000);
 
 			try{
 				selenium.selectWindow("");

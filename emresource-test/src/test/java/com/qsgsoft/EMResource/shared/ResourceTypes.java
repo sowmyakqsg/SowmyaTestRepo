@@ -58,9 +58,6 @@ public class ResourceTypes {
 
 		try {
 			
-			selenium.selectWindow("");
-			selenium.selectFrame("Data");
-			
 			int intCnt=0;
 			do{
 				try{

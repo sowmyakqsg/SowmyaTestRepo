@@ -56,11 +56,7 @@ public class StatusTypes {
 		propElementDetails = objelementProp.ElementId_FilePath();
 		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
 
-		try {
-			selenium.selectWindow("");
-			selenium.selectFrame("Data");
-
-			
+		try {	
 			int intCnt=0;
 			do{
 				try {
@@ -84,6 +80,7 @@ public class StatusTypes {
 			selenium.click(propElementDetails
 					.getProperty("SetUP.StatusTypesLink"));
 			selenium.waitForPageToLoad(gstrTimeOut);
+			Thread.sleep(10000);
 			
 			
 			intCnt = 0;
@@ -2507,12 +2504,7 @@ public class StatusTypes {
 		propElementDetails = objelementProp.ElementId_FilePath();
 		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
 
-		try {
-
-			selenium.selectWindow("");
-			selenium.selectFrame("Data");
-
-			
+		try {	
 			int intCnt = 0;
 			do {
 				try {

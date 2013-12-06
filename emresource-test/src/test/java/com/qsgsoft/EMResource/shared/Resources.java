@@ -58,9 +58,6 @@ public class Resources {
 		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
 
 		try {
-
-			selenium.selectWindow("");
-			selenium.selectFrame("Data");
 			
 			int intCnt=0;
 			do{
@@ -531,9 +528,6 @@ public class Resources {
 		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
 
 		try {
-
-			selenium.selectWindow("");
-			selenium.selectFrame("Data");
 
 			selenium.click(propElementDetails
 					.getProperty("CreateRes.CreateNewResource"));
@@ -4026,6 +4020,53 @@ public class Resources {
 		} catch (Exception e) {
 			log4j.info("navToEditResourcePageFrmUplDetails function failed" + e);
 			strReason = "navToEditResourcePageFrmUplDetails function failed" + e;
+		}
+		return strReason;
+	}
+	
+	/***********************************************************************
+	'Description	:navigate to edit sub-resource page
+	'Precondition	:None
+	'Arguments		:selenium, strResource
+	'Returns		:String
+	'Date	 		:05-Dec-2013
+	'Author			:QSG
+	'-----------------------------------------------------------------------
+	'Modified Date                            Modified By
+	'16-May-2012                               <Name>
+	************************************************************************/
+	public String navToEditSubResourcePageFrmUplDetails(Selenium selenium,String strSubResource) throws Exception{
+		String strReason="";
+		propEnvDetails = objReadEnvironment.readEnvironment();
+		propElementDetails = objelementProp.ElementId_FilePath();		
+		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
+		try{
+			try{
+				assertTrue(selenium.isElementPresent("//div[@id='mainContainer']/form/table[2]/tbody/tr/td[text()='"+strSubResource+"']/parent::tr/td[2]/a"));
+				log4j
+				.info("Resource ID is hyperlinked");
+				//click on Edit link for Resource
+				selenium.click("//div[@id='mainContainer']/form/table[2]/tbody/tr/td[text()='"+strSubResource+"']/parent::tr/td[2]/a");
+				selenium.waitForPageToLoad(gstrTimeOut);				
+				try {
+					assertEquals("Edit Sub-Resource of "+strSubResource, selenium
+							.getText(propElementDetails
+									.getProperty("Header.Text")));
+					log4j.info("Edit Sub-Resource page is displayed");				
+				} catch (AssertionError Ae) {
+	
+					strReason = "Edit Sub-Resource page is NOT displayed"+ Ae;
+				log4j.info("Edit Sub-Resource page is NOT displayed"+ Ae);
+				}
+			
+			} catch (AssertionError Ae) {				
+				strReason = "Sub-Resource ID is NOT hyperlinked"
+					+ Ae;
+			log4j.info("Sub-Resource ID is NOT hyperlinked");
+			}
+		} catch (Exception e) {
+			log4j.info("navToEditSubResourcePageFrmUplDetails function failed" + e);
+			strReason = "navToEditSubResourcePageFrmUplDetails function failed" + e;
 		}
 		return strReason;
 	}

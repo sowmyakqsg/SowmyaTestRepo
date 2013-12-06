@@ -1,6 +1,8 @@
 package com.qsgsoft.EMResource.shared;
 
 import com.thoughtworks.selenium.Selenium;
+
+import java.io.File;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 import static org.junit.Assert.*;
@@ -230,37 +232,8 @@ public String checkOptionUploadInSetup(Selenium selenium,boolean blnUploadOpt) t
 		try {
 			selenium.selectWindow("");
 			selenium.selectFrame("Data");
-
-			String strArgs[] = { strAutoFilePath, strUploadFilePath };
-			// Auto it to upload the file
-			Runtime.getRuntime().exec(strArgs);
-			selenium.windowFocus();
-			// click on Browse
-			selenium.click(propElementDetails
-					.getProperty("DocumentLibrary.AddNewDocument.Browse"));
-			// wait for pop up to appear
-			Thread.sleep(5000);
-			// Wait for autoit file to finish execution
-			String strProcess = "";
-
-			int intCnt = 0;
-			do {
-
-				GetProcessList objGPL = new GetProcessList();
-				strProcess = objGPL.GetProcessName();
-				intCnt++;
-				Thread.sleep(1000);
-			} while (strProcess.contains(strAutoFileName) && intCnt < 240);
-
-			if (blnTest) {
-				if (selenium.isChecked(propElementDetails.getProperty("Upload.Test")) == false) {
-					selenium.click(propElementDetails.getProperty("Upload.Test"));
-				}
-			} else {
-				if (selenium.isChecked(propElementDetails.getProperty("Upload.Test"))) {
-					selenium.click(propElementDetails.getProperty("Upload.Test"));
-				}
-			}
+			File file = new File(strUploadFilePath);
+			selenium.type("name = document", file.getAbsolutePath());
 
 			if (blnSave) {
 

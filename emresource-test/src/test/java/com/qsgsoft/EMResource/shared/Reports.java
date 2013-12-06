@@ -2228,7 +2228,7 @@ public class Reports {
 
 				log4j.info("Resource Detail Report page is displayed");
 
-				if (selenium.getCssCount("css=input[name='resourceID']")
+				if (selenium.getXpathCount("css=input[name='resourceID']")
 						.toString().compareTo("1") == 0) {
 
 					try {
