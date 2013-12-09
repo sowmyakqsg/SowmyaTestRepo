@@ -23,7 +23,7 @@ import static org.junit.Assert.*;
 ' <Date>                           	                <Name>
 '***************************************************************/
 
-public class SmokePreferences  {
+public class SmokePreferencesTest  {
 	Date dtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger

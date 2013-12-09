@@ -25,7 +25,7 @@ import org.apache.log4j.Logger;
 ' <Date>                           	                <Name>
 '***************************************************************/
 
-public class SmokeMultiRegionFeatures {
+public class SmokeMultiRegionFeaturesTest {
 	Date dtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger

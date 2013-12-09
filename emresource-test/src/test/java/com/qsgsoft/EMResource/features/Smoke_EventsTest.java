@@ -25,7 +25,7 @@ import com.thoughtworks.selenium.Selenium;
 ' Modified Date			                               Modified By
 ' Date					                               Name
 '**************************************************************************/
-public class Smoke_Events {
+public class Smoke_EventsTest {
 
 	Date dtStartDate;
 	ReadData rdExcel;

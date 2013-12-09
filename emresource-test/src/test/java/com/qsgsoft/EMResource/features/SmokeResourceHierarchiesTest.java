@@ -31,7 +31,7 @@ import com.thoughtworks.selenium.Selenium;
 ' <Date>                           	         <Name>
 '*******************************************************************/
 
-public class SmokeResourceHierarchies {
+public class SmokeResourceHierarchiesTest {
 	Date gdtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger

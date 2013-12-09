@@ -36,7 +36,7 @@ import com.qsgsoft.EMResource.shared.*;
 ' <Date>                           	         <Name>
 '*******************************************************************/
 
-public class SmokeSetupFirefox {
+public class SmokeSetupFirefoxTest {
 	Date gdtStartDate;
 	ReadData rdExcel;
 	static Logger log4j = Logger
