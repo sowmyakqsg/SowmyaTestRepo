@@ -7,6 +7,7 @@ import java.io.File;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -22,6 +23,12 @@ public class EMTHeadlessWebdriverJUnitTest {
 		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit")
 				.setLevel(java.util.logging.Level.OFF);
 	}
+	
+	@After
+	public void closeBrowser(){
+		driver.close();
+		driver.quit();
+	}
 
 	@Test
 	public void test() throws Exception {
@@ -31,13 +38,14 @@ public class EMTHeadlessWebdriverJUnitTest {
         caps.setCapability(
         PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,PHANTOMJS_EXE.getAbsolutePath());
         driver = new PhantomJSDriver(caps);
+		//driver = new FirefoxDriver();
         driver.get("http://www.google.com");
-
-        String Logintext = driver.findElement(By.linkText("Maps")).getText();
+        Thread.sleep(5000);
+        String Logintext = driver.findElement(By.linkText("Gmail")).getText();
         System.out.println(Logintext);
 
-		driver.get("https://emtrack-ng.qa.intermedix.com/app");
-		assertEquals(driver.getTitle(),"EMTrack ~ Login");
-		driver.close();
+		driver.navigate().to("https://emtrack-ng.qa.intermedix.com/app");
+		Thread.sleep(5000);
+		assertEquals(driver.getTitle(),"Google");
 	}
 }
