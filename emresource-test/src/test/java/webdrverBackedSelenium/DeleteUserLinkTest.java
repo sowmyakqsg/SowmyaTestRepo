@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverBackedSelenium;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.internal.WrapsDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.qsgsoft.EMResource.support.Date_Time_settings;
 import com.qsgsoft.EMResource.support.ElementId_properties;
@@ -17,6 +18,7 @@ import com.qsgsoft.EMResource.support.Paths_Properties;
 import com.qsgsoft.EMResource.support.OfficeCommonFunctions;
 import com.qsgsoft.EMResource.support.ReadData;
 import com.qsgsoft.EMResource.support.ReadEnvironment;
+import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.Selenium;
 import org.apache.log4j.Logger;
 
@@ -72,24 +74,26 @@ public class DeleteUserLinkTest {
 		Paths_Properties objAP = new Paths_Properties();
 		pathProps = objAP.Read_FilePath();
 
-		DesiredCapabilities ieCapabilities = DesiredCapabilities
+		/*DesiredCapabilities ieCapabilities = DesiredCapabilities
 				.internetExplorer();
 		ieCapabilities
 				.setCapability(
 						InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
 						true);
-		driver = new InternetExplorerDriver(ieCapabilities);
+		driver = new InternetExplorerDriver(ieCapabilities);*/
 
 		//driver = new FirefoxDriver();
 		//driver.manage().window().maximize();
 		//driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		/*driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		driver.manage().timeouts().setScriptTimeout(1, TimeUnit.MINUTES);
 		selenium = new WebDriverBackedSelenium(driver,
-				propEnvDetails.getProperty("urlEU"));
+				propEnvDetails.getProperty("urlEU"));*/
+		
+		selenium = new DefaultSelenium("localhost",4444,"*iexplore",propEnvDetails.getProperty("urlEU"));
 
-		// selenium.start();
-		// selenium.windowMaximize();
+		selenium.start();
+		selenium.windowMaximize();
 			
 		objOFC = new OfficeCommonFunctions();
 		rdExcel = new ReadData();
@@ -105,6 +109,7 @@ public class DeleteUserLinkTest {
 		selenium.stop();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testBQS85126() throws Exception {
 
@@ -140,5 +145,17 @@ public class DeleteUserLinkTest {
 		selenium.waitForPageToLoad(gstrTimeOut);
 		File file = new File("C://Users//Admin//Desktop//GetLinkImage.jpg");
 		selenium.type("css=input[name='document']",file.getAbsolutePath());
+	}
+	
+	@Test
+	public void testBQS() throws Exception {
+
+		Date_Time_settings dts = new Date_Time_settings();
+		gstrTimetake = dts.timeNow("HH:mm:ss");
+		selenium.open(propEnvDetails.getProperty("urlRel"));// relative URL
+		gstrTimeOut = propEnvDetails.getProperty("TimeOut");
+
+		String strLoginUserName = rdExcel.readData("Login", 3, 1);
+		String strLoginPassword = rdExcel.readData("Login", 3, 2);
 	}
 }

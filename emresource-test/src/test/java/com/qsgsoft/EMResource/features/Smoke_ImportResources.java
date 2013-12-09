@@ -75,7 +75,7 @@ public class Smoke_ImportResources {
 		Paths_Properties objAP = new Paths_Properties();
 		pathProps = objAP.Read_FilePath();
 
-	/*	DesiredCapabilities ieCapabilities = DesiredCapabilities
+		DesiredCapabilities ieCapabilities = DesiredCapabilities
 				.internetExplorer();
 		ieCapabilities
 				.setCapability(
@@ -83,12 +83,12 @@ public class Smoke_ImportResources {
 						true);
 		driver = new InternetExplorerDriver(ieCapabilities);
 		selenium = new WebDriverBackedSelenium(driver,
-				propEnvDetails.getProperty("urlEU"));*/
+				propEnvDetails.getProperty("urlEU"));
 		
-		DesiredCapabilities caps = new DesiredCapabilities();
+		/*DesiredCapabilities caps = new DesiredCapabilities();
         caps.setJavascriptEnabled(true); 
         caps.setCapability( PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,PHANTOMJS_EXE.getAbsolutePath());
-        driver = new PhantomJSDriver(caps);
+        driver = new PhantomJSDriver(caps);*/
         selenium = new WebDriverBackedSelenium(driver,
 				propEnvDetails.getProperty("urlEU"));
     	objOFC = new OfficeCommonFunctions();
