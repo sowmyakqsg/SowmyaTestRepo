@@ -1,0 +1,5 @@
+hub
+java -jar selenium-server-standalone-2.37.0.jar -role hub
+
+creating node 
+java -jar selenium-server-standalone-2.37.0.jar -role port -hub http://192.168.27.53:4444/grid/register -browser browsername=firefox,version=15.0.1,platform=WINDOWS

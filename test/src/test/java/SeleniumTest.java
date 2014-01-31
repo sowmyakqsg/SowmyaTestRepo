@@ -3,6 +3,8 @@ import static org.junit.Assert.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
@@ -22,12 +24,7 @@ public class SeleniumTest {
 		cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		
 		driver = new RemoteWebDriver(new URL("http://192.168.27.53:5551/wd/hub"),cap);
-		/*
-		WebDriver driver = new RemoteWebDriver(
-                new URL("http://localhost:4444/wd/hub"), 
-                DesiredCapabilities.internetExplorer());
-
-		driver.get("http://www.google.com");*/
+		
+		driver.get("http://www.google.com");
 	}
-
 }
