@@ -43,7 +43,7 @@ public class SeleniumDriverTest {
 	public void testSeleniumGrid() throws Exception {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setBrowserName("firefox");
-		this.driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), cap);
+		this.driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 		this.driver.manage().deleteAllCookies();
 		this.driver.get("https://fleeteyes.qa.intermedix.com/user/login");
 		driver.close();
