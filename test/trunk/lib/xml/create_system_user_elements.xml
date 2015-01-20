@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="text" name ="system_user_name">
+		<locators>
+			<locator type="id">record_login</locator>
+			<locator type="css">input#record_login</locator>
+			<locator type="xpath">//input[@id='record_login']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="system_user_password">
+		<locators>
+			<locator type="id">record_new_password</locator>
+			<locator type="css">input#record_new_password</locator>
+			<locator type="xpath">//input[@id='record_new_password']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "system_user_password_confirmation">
+		<locators>
+			<locator type="id">record_new_password_confirmation</locator>
+			<locator type="css">input#record_new_password_confirmation</locator>
+			<locator type="xpath">//input[@id='record_new_password_confirmation']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="allowed_mobile_access">
+		<locators>
+			<locator type="id">record_is_allowed_mobile_access</locator>
+			<locator type="css">select#record_is_allowed_mobile_access</locator>
+			<locator type="xpath">//select[@id='record_is_allowed_mobile_access']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="default_map_view">
+		<locators>
+			<locator type="id">record_defaultmapview</locator>
+			<locator type="css">select#record_defaultmapview</locator>
+			<locator type="xpath">//select[@id='record_defaultmapview']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="incident_caption">
+		<locators>
+			<locator type="id">record_show_incident_caption</locator>
+			<locator type="css">select#record_show_incident_caption</locator>
+			<locator type="xpath">//select[@id='record_show_incident_caption']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="incident_detail">
+		<locators>
+			<locator type="id">record_show_patient_data</locator>
+			<locator type="css">select#record_show_patient_data</locator>
+			<locator type="xpath">//select[@id='record_show_patient_data']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="record_can_view_history">
+		<locators>
+			<locator type="id">record_canviewvehiclehistory</locator>
+			<locator type="css">select#record_canviewvehiclehistory</locator>
+			<locator type="xpath">//select[@id='record_canviewvehiclehistory']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="record_can_send_mesaages">
+		<locators>
+			<locator type="id">record_cansendmessages</locator>
+			<locator type="css">select#record_cansendmessages</locator>
+			<locator type="xpath">//select[@id='record_cansendmessages']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="record_can_view_mutual_aid">
+		<locators>
+			<locator type="id">record_canviewmutualaid</locator>
+			<locator type="css">select#record_canviewmutualaid</locator>
+			<locator type="xpath">//select[@id='record_canviewmutualaid']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="record_can_have_mdt_access">
+		<locators>
+			<locator type="id">record_garminallowed</locator>
+			<locator type="css">select#record_garminallowed</locator>
+			<locator type="xpath">//select[@id='record_garminallowed']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="record_crew_number">
+		<locators>
+			<locator type="id">record_crewmemberaccount</locator>
+			<locator type="css">select#record_crewmemberaccount</locator>
+			<locator type="xpath">//select[@id='record_crewmemberaccount']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name ="pcr_admin">
+		<locators>
+			<locator type="id">record_pcradmin_</locator>
+			<locator type="css">select#record_pcradmin_</locator>
+			<locator type="xpath">//select[@id='record_pcradmin_']</locator>
+		</locators>
+	</element>
+	
+    <element type="text" name ="create_system_user_button">
+		<locators>
+			<locator type="css">p.form-footer>input</locator>
+			<locator type="xpath">//p[@class='form-footer']/input</locator>
+		</locators>
+	</element>
+</elements>

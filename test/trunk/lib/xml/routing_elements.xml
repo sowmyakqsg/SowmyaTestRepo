@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>	
+	<element type="list" name="vehicle_select_routing_start">
+			<locators>
+				<locator type="css">#vehicleSelectRoutingStart</locator>
+				<locator type="id">vehicleSelectRoutingStart</locator>
+				<locator type="xpath">//select[@id='vehicleSelectRoutingStart']</locator>
+			</locators>
+	</element>
+	
+	<element type="list" name="source_vehicle">
+			<locators>
+				<locator type="css">#vehicleSelectRoutingStart option</locator>
+				<locator type="xpath">//select[@id='vehicleSelectRoutingStart']//option</locator>
+			</locators>
+	</element>
+	
+	<element type="list" name="incident_select_routing_end">
+		<locators>
+			<locator type="css">#incidentSelectRoutingEnd option</locator>
+			<locator type="xpath">//select[@id='incidentSelectRoutingEnd']//option</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="find_directions">
+		<locators>
+			<locator type="css">fieldset.routingButtons button:nth-of-type(1)</locator>
+			<locator type="xpath">//fieldset[@class='routingButtons']//button[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="clear_directions">
+		<locators>
+			<locator type="css">fieldset.routingButtons button:nth-of-type(2)</locator>
+			<locator type="xpath">//fieldset[@class='routingButtons']//button[2]</locator>
+		</locators>
+	</element>
+	
+	<element type="input" name="end_route">
+		<locators>
+		    <locator type="id">endroute</locator>
+			<locator type="css">#endroute</locator>
+			<locator type="xpath">//input[@id='endroute']</locator>
+		</locators>
+	</element>
+	
+	<element type="list" name="vehicle_select_routing_end">
+			<locators>
+				<locator type="css">#vehicleSelectRoutingEnd</locator>
+				<locator type="id">vehicleSelectRoutingEnd</locator>
+				<locator type="xpath">//select[@id='vehicleSelectRoutingEnd']</locator>
+			</locators>
+	</element>
+	
+	<element type="list" name="destination_vehicle">
+			<locators>
+				<locator type="css">#vehicleSelectRoutingEnd option</locator>
+				<locator type="xpath">//select[@id='vehicleSelectRoutingEnd']//option</locator>
+			</locators>
+	</element>
+	
+	<element type="list" name="incident_select_routing_end">
+			<locators>
+				<locator type="css">#incidentSelectRoutingEnd</locator>
+				<locator type="id">incidentSelectRoutingEnd</locator>
+				<locator type="xpath">//select[@id='incidentSelectRoutingEnd']</locator>
+			</locators>
+	</element>
+	
+	<element type="division" name="directions_panel">
+			<locators>
+				<locator type="css">#directionsPanel div</locator>
+				<locator type="xpath">//div[@id='directionsPanel']//div</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="source_address">
+			<locators>
+				<locator type="xpath">//img[contains(@src,'a.png')]/parent::td/following-sibling::td</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="destination_address">
+			<locators>
+				<locator type="xpath">//img[contains(@src,'b.png')]/parent::td/following-sibling::td</locator>
+			</locators>
+	</element>
+	
+	<element type="img" name="source_icon">
+			<locators>
+				<locator type="xpath">//img[contains(@src,'a.png')]</locator>
+				<locator type="css">img[src*='a.png']</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="address_icon_on_map">
+			<locators>
+				<locator type="xpath">//div[@id='map']//div[@class='gm-iw']</locator>
+				<locator type="css">div#map div.gm-iw</locator>
+			</locators>
+	</element>
+	
+	<element type="img" name="destination_icon">
+			<locators>
+			    <locator type="xpath">//img[contains(@src,'b.png')]</locator>
+				<locator type="css">img[src*='b.png']</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="source_first_navigation_step">
+			<locators>
+			    <locator type="xpath">//div[@id='directionsPanel']//div[@class='adp-summary']//following-sibling::div//td[3]</locator>
+				<locator type="css">div#directionsPanel div.adp-summary~div tr:nth-of-type(1) td:nth-of-type(3)</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="source_all_navigation_step">
+			<locators>
+			    <locator type="xpath">//div[@id='directionsPanel']//div[@class='adp-summary']//following-sibling::div//tr//td[3]</locator>
+				<locator type="css">div#directionsPanel div.adp-summary~div tr td:nth-of-type(3)</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="time_to_reach_destination">
+			<locators>
+			    <locator type="xpath">//div[@id='directionsPanel']//div[@class='adp-summary']//span[jsdisplay='duration']</locator>
+				<locator type="css">div#directionsPanel div.adp-summary span[jsdisplay='duration']</locator>
+			</locators>
+	</element>
+</elements>

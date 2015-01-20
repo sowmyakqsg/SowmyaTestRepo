@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	
+	<element type="text" name="all_search_history_options">
+		<locators>
+			<locator type="id">historySearchType</locator>
+			<locator type="css">select#historySearchType option</locator>
+			<locator type="xpath">//select[@id='historySearchType']//option</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="tabSnapshot">
+		<locators>
+			<locator type="id">tabSnapshot</locator>
+			<locator type="css">li#tabSnapshot</locator>
+			<locator type="xpath">//li[@id='tabSnapshot']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="search_button">
+		<locators>
+			<locator type="id">histVehSearchButton</locator>
+			<locator type="css">button#histVehSearchButton</locator>
+			<locator type="xpath">//button[@id='histVehSearchButton']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="select_search_history">
+		<locators>
+			<locator type="id">historySearchType</locator>
+			<locator type="css">select#historySearchType</locator>
+			<locator type="xpath">//select[@id='historySearchType']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="run_number_error_info">
+		<locators>
+			<locator type="css">div#vehicleIncidentDiv>div.alert.alert-error.fe-info</locator>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']/div[@class='alert alert-error fe-info']</locator>
+		</locators>
+	</element>
+	
+  <element type="text" name="history_search_results">
+		<locators>
+			<locator type="id">history_vehicle_results</locator>
+			<locator type="css">fieldset#history_vehicle_results</locator>
+			<locator type="xpath">//fieldset[@id='history_vehicle_results']</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="history_search_playback">
+		<locators>
+			<locator type="id">history_playback</locator>
+			<locator type="css">fieldset#history_playback</locator>
+			<locator type="xpath">//div[@id='vehicleHolderDiv']//fieldset[@id='history_playback']</locator>
+		</locators>
+  </element>
+  
+   <element type="text" name="run_number_vehicle">
+		<locators>
+			<locator type="id">runNumberVehicle</locator>
+			<locator type="css">input#runNumberVehicle</locator>
+			<locator type="xpath">//input[@id='runNumberVehicle']</locator>
+		</locators>
+   </element>
+   
+    <element type="text" name="summerized_by">
+		<locators>
+			<locator type="css">fieldset.summary</locator>
+			<locator type="xpath">//fieldset[@class='summary']</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="summerized_by_incident_run_number">
+		<locators>
+			<locator type="css">div#vehicleIncidentDiv span>dl.event-details dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']//span/dl[@class='event-details dl-horizontal']/dt[contains(text(),'Run Number')]/following-sibling::dd[1]</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="clear_history">
+		<locators>
+			<locator type="css">div#vehicleHolderDiv fieldset.button-set button:nth-of-type(2)</locator>
+			<locator type="xpath">//div[@id='vehicleHolderDiv']//fieldset[@class='button-set']//button[@title='Clear All Fields']</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="vehicle_history_search">
+		<locators>
+			<locator type="id">vehicleSelectHistory</locator>
+			<locator type="css">select#vehicleSelectHistory</locator>
+			<locator type="xpath">//select[@id='vehicleSelectHistory']</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="history_incident_tab">
+		<locators>
+			<locator type="id">tabIncident</locator>
+			<locator type="xpath">//li[@id='tabIncident']/a</locator>
+			<locator type="css">li#tabIncident a</locator>
+		</locators>
+	</element>
+	
+	 <element type="text" name="run_number_incident">
+		<locators>
+			<locator type="id">runNumber</locator>
+			<locator type="css">input#runNumber</locator>
+			<locator type="xpath">//input[@id='runNumber']</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="incident_search_button">
+		<locators>
+			<locator type="id">histIncSearchButton</locator>
+			<locator type="css">button#histIncSearchButton</locator>
+			<locator type="xpath">//button[@id='histIncSearchButton']</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="incident_history_search_results">
+		<locators>
+			<locator type="id">historyIncidentGroupSec_0</locator>
+			<locator type="css">section#historyIncidentGroupSec_0</locator>
+			<locator type="xpath">//section[@id='historyIncidentGroupSec_0']</locator>
+		</locators>
+  </element>
+  
+    <element type="text" name="incident_run_number_history_search">
+		<locators>
+			<locator type="css">span#e_all_description0 dd:nth-of-type(1)</locator>
+			<locator type="xpath">//span[starts-with(@id,e_all_description)]//dt[contains(text(),'Run Number')]/following-sibling::dd[1]</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="incident_cal_type">
+		<locators>
+		    <locator type="id">callType</locator>
+			<locator type="css">select#callType</locator>
+			<locator type="xpath">select[@id='callType']</locator>
+		</locators>
+   </element>
+   
+    <element type="text" name="incident_clear_history">
+		<locators>
+			<locator type="css">div#incidentAllDiv form.filter_by fieldset.button-set button:nth-of-type(2)</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']//fieldset[@class='button-set']//button[@title='Clear All Fields']</locator>
+		</locators>
+   </element>
+   
+    <element type="text" name="vehicle_select_group">
+		<locators>
+			<locator type="css">div#historyMenu>fieldset#vehicleSelectGroup>div</locator>
+			<locator type="xpath">//div[@id='historyMenu']/fieldset[@id='vehicleSelectGroup']/div</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="vehicle_select_group_error">
+		<locators>
+			<locator type="css">div#historyMenu>fieldset#vehicleSelectGroup>div.error</locator>
+			<locator type="xpath">//div[@id='historyMenu']/fieldset[@id='vehicleSelectGroup']/div[@class='error']</locator>
+		</locators>
+   </element>
+   
+   
+    <element type="text" name="start_date_group">
+		<locators>
+			<locator type="css">div#historyMenu>fieldset#startDateGroup>div</locator>
+			<locator type="xpath">//div[@id='historyMenu']//fieldset[@id='startDateGroup']/div</locator>
+		</locators>
+   </element>
+   
+    <element type="text" name="end_date_group">
+		<locators>
+			<locator type="css">div#historyMenu>fieldset#endDateGroup>div</locator>
+			<locator type="xpath">//div[@id='historyMenu']//fieldset[@id='endDateGroup']/div</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="alert_error_info">
+		<locators>
+			<locator type="css">div#vehicleIncidentDiv>div.alert.alert-error.fe-info</locator>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']/div[@class='alert alert-error fe-info']</locator>
+		</locators>
+   </element>
+   
+   <element type="text" name="history_snapshot_tab">
+		<locators>
+			<locator type="id">tabSnapshot</locator>
+			<locator type="xpath">//li[@id='tabSnapshot']/a</locator>
+			<locator type="css">li#tabSnapshot a</locator>
+		</locators>
+	</element>
+	
+  <element type="text" name="summary_by_position">
+		<locators>
+			<locator type="id">by_raw_position</locator>
+			<locator type="xpath">//input[@id='by_raw_position']</locator>
+			<locator type="css">input#by_raw_position</locator>
+		</locators>
+  </element>
+  
+   <element type="text" name="summary_by_position_results">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']/table[starts-with(@id,'historyVIncidentTrackingTable')]</locator>
+			<locator type="css">div#vehicleIncidentDiv>table</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="summary_by_position_results_heading">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']/table[starts-with(@id,'historyVIncidentTrackingTable')]//tr[1]</locator>
+			<locator type="css">div#vehicleIncidentDiv>table th</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="history_incident_vehicle">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleIncidentDiv']/section/h2</locator>
+			<locator type="css">div#vehicleIncidentDiv>section/h2</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="incident_search_section_one">
+		<locators>
+			<locator type="xpath">//div[@id='incidentDisplayDiv']/section/h2</locator>
+			<locator type="css">div#incidentDisplayDiv>section/h2</locator>
+		</locators>
+  </element>
+  
+   <element type="text" name="incident_search_section_two">
+		<locators>
+			<locator type="xpath">//div[@id='incidentDisplayDiv']//div[starts-with(@id,'historyIncidentGroup_collapsable')]/section/h2</locator>
+			<locator type="css">div#incidentDisplayDiv div>section/h2</locator>
+		</locators>
+  </element>
+  
+  <element type="text" name="incident_title_history_search">
+		<locators>
+			<locator type="css">div#incidentDisplayDiv>section>h2</locator>
+			<locator type="xpath">div[@id='incidentDisplayDiv']/section/h2</locator>
+		</locators>
+   </element>
+   
+</elements>

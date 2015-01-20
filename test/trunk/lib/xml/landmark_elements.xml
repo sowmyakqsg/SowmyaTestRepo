@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type = "text" name = "landmark_section">
+		<locators>
+			<locator type = "xpath">//div[@id='landmarksDiv']/section</locator>
+			<locator type = "css">div#landmarksDiv section</locator>
+		</locators>
+	</element>
+	
+	<element type = "text" name = "first_landmark_name">
+		<locators>
+			<locator type = "xpath">//div[@id='landmarksDiv']//section[1]//tr[1]//td[1]//p[1]</locator>
+			<locator type = "css">div#landmarksDiv section:nth-of-type(1) tr:nth-of-type(1) td p:nth-of-type(1)</locator>
+		</locators>
+	</element>
+	
+	<element type = "text" name = "first_landmark_magnifier_icon">
+		<locators>
+			<locator type = "xpath">//div[@id='landmarksDiv']//section[1]//tr[1]//td[1]//p[1]//following-sibling::p/img</locator>
+			<locator type = "css">div#landmarksDiv section:nth-of-type(1) tr:nth-of-type(1) td p:nth-of-type(1)~p img</locator>
+		</locators>
+	</element>
+	
+		<element type = "text" name = "landmark_name_in_map">
+		<locators>
+			<locator type = "xpath">//div[@id='map']//span[@class='feLabel']</locator>
+			<locator type = "css">div#map span.feLabel</locator>
+		</locators>
+	</element>
+	
+	<element type = "text" name = "first_landmark_section">
+		<locators>
+			<locator type = "xpath">//div[@id='landmarksDiv']/section/h2[@class='title']</locator>
+			<locator type = "css">div#landmarksDiv section:nth-of-type(1) h2.title.collapsed</locator>
+		</locators>
+	</element>
+	
+	<element type = "text" name = "first_landmark_name_map">
+		<locators>
+			<locator type = "xpath">//div[@id='map']//div[@class='infoBox'][contains(@style,'visibility: hidden;')]//font</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="landmark_search_label">
+		<locators>
+			<locator type="id">landmarkSearchLabel</locator>
+			<locator type="css">input#landmarkSearchLabel</locator>
+			<locator type="xpath">//input[@id='landmarkSearchLabel']</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name="search_link">
+		<locators>
+			<locator type="css">div.search-box a:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@class='search-box']//a[@title='Filter Landmarks']</locator>
+		</locators>
+	</element>
+	
+	<!-- <element type="text" name="search_results">
+		<locators>
+			<locator type="css">div#landmarksDiv div.collapsable-content table tr td</locator>
+			<locator type="xpath">//div[@id='landmarksDiv']//div[@class='collapsable-content']</locator>
+		</locators>
+	</element> -->
+	
+	<element type="text" name="search_results">
+		<locators>
+			<locator type="css">div#landmarksDiv section div.collapsable-content table tr td</locator>
+			<locator type="xpath">//div[@id='landmarksDiv']//section//div[@class='collapsable-content']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="collapse_title">
+		<locators>
+			<locator type="css">div#landmarksDiv h2.title.collapsed</locator>
+			<locator type="xpath">//div[@id='landmarksDiv']//h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="landmarks_div">
+		<locators>
+		    <locator type="id">landmarksDiv</locator>
+			<locator type="css">div#landmarksDiv</locator>
+			<locator type="xpath">//div[@id='landmarksDiv']</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name="clear_link">
+		<locators>
+			<locator type="css">div.search-box a:nth-of-type(2)</locator>
+			<locator type="xpath">//div[@class='search-box']//a[@title='Clear Landmark Filter']</locator>
+		</locators>
+	</element>
+	
+	<element type="img" name="mouse_over_on_landmark">
+		<locators>
+			<locator type="css">div#map div.gmnoprint>img</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='gmnoprint']/img</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="mouse_over_on_landmark_title">
+		<locators>
+			<locator type="css">div.infoBox>font</locator>
+			<locator type="xpath">//div[@class='infoBox']/font</locator>
+		</locators>
+	</element>
+	
+</elements>

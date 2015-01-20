@@ -1,0 +1,74 @@
+<project basedir="." default="run" name="Ant file for TestNG">
+  <property name="src-dir" location="../" />
+  <property name="build-dir" location="bin" />
+  <property name="libs-dir" location="${src-dir}/qaframework/externals" />
+  <property name="results-dir" location="results" />
+  
+  <path id="class.path">
+    <pathelement location="${libs-dir}/testng-6.8.6beta.jar" />
+    <pathelement location="${libs-dir}/sikuli-script.jar" />
+    <pathelement location="${libs-dir}/sikuli/sikuli-java.jar" />
+    <pathelement location="${libs-dir}/sikuli/sikuli-ide.jar" />
+    <pathelement location="${libs-dir}/sikuli/sikuli-tessdata.jar" />
+  	<pathelement location="${libs-dir}/sikuli/lib" />
+    <pathelement location="${libs-dir}/selenium-java-2.41.0.jar" />
+    <pathelement location="${libs-dir}/selenium-server-standalone-2.40.0.jar" />
+    <pathelement location="${build-dir}" />
+  </path>
+   
+  <taskdef name="testng" classname="org.testng.TestNGAntTask">
+    <classpath>
+      <pathelement location="${libs-dir}/testng-6.8.6beta.jar"/>
+    </classpath>
+  </taskdef>
+
+  <target name="init">
+    <mkdir dir="${build-dir}"/>
+  </target>
+  <target name="clean-init">
+    <delete dir="${build-dir}"/>
+  </target>
+
+  <target name="compile" depends="init">
+    <condition property="wd_host" value="${wd_host}" else="http://se-grid.dev.pitbpa0.priv.intermedix.com:4444/wd/hub">
+      <isset property="wd_host" />
+    </condition>
+    <condition property="browser" value="${browser}" else="firefox">
+      <isset property="browser" />
+    </condition>
+    <propertyfile file="config.properties">
+      <entry  key="wd_host" type="string" value="${wd_host}"/>
+      <entry  key="wd_browser" type="string" value="${browser}"/>
+    </propertyfile>
+    <javac srcdir="${src-dir}" destdir="${build-dir}" debug="on" optimize="off" deprecation="on" includeantruntime="true">
+      <classpath>
+        <fileset dir="${libs-dir}">
+          <include name="**/*.jar"/>
+          <include name="*.jar"/>
+        </fileset>
+      </classpath>
+      <include name="**/*.java"/>
+    </javac>
+    <!--copy file="testng.xml" tofile="${build-dir}/testng.xml"/-->
+  </target>
+  <target name="clean-compile" depends="clean-init">
+    <delete file="config.properties"/>
+  </target>
+
+    
+  <target name="run" depends="compile">
+    <delete dir="${results-dir}"/>
+    <mkdir dir="${results-dir}"/><!-- Create the output directory. -->
+    <condition property="groups" value="${groups}" else="">
+      <isset property="groups" />
+    </condition>
+    <testng outputdir="${results-dir}" classpathref="class.path" groups="${groups}">
+      <classfileset dir="${build-dir}/module/" includes="*/ui_tests/*.class"/>
+    </testng>
+  </target>
+  <target name="clean-run" depends="clean-compile">
+    <delete dir="${results-dir}"/>
+  </target>
+  
+  <target name="clean" depends="clean-run"/>
+</project> 

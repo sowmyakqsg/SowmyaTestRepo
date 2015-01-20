@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+<!-- Refresh rates -->
+	<element type = "input" name ="refresh_rate_text">
+		<locators>
+			<locator type="css">input#refreshRateText</locator>
+			<locator type="id">refreshRateText</locator>
+			<locator type="xpath">//input[@id='refreshRateText']</locator>
+		</locators>
+	</element>
+	
+	<element type = "button" name ="save_refresh_rate">
+		<locators>
+			<locator type="css">input#refreshRateText~button</locator>
+			<locator type="xpath">//input[@id='refreshRateText']//following-sibling::button</locator>
+		</locators>
+	</element>
+	
+	<!-- Mobile PIN fields -->
+	
+	<element type = "input" name ="mobile_pin">
+		<locators>
+			<locator type="css">input#mobilePinText</locator>
+			<locator type="id">mobilePinText</locator>
+			<locator type="xpath">//input[@id='mobilePinText']</locator>
+		</locators>
+	</element>
+	
+	<element type = "button" name ="save_mobile_pin">
+		<locators>
+			<locator type="css">input#mobilePinText~button</locator>
+			<locator type="xpath">//input[@id='mobilePinText']//following-sibling::button</locator>
+		</locators>
+	</element>
+	
+	<!-- Password reset fields -->
+	<element type = "input" name ="new_password">
+		<locators>
+			<locator type="css">input#newPassword1</locator>
+			<locator type="id">newPassword1</locator>
+			<locator type="xpath">//input[@id='newPassword1']</locator>
+		</locators>
+	</element>
+
+	<element type = "input" name ="retype_new_password">
+		<locators>
+			<locator type="css">input#newPassword2</locator>
+			<locator type="id">newPassword2</locator>
+			<locator type="xpath">//input[@id='newPassword2']</locator>
+		</locators>
+	</element>
+	
+	<element type = "button" name ="save_new_password">
+		<locators>
+			<locator type="css">button[onclick='updatePassword()']</locator>
+			<locator type="xpath">//button[@onclick='updatePassword()']</locator>
+		</locators>
+	</element>
+		
+	<element type="button" name="close">
+		<locators>
+			<locator type="xpath">//div[@id='settingModal2']//button[contains(text(),'x')]</locator>
+		</locators>
+	</element>
+</elements>

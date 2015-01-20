@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="textContent" name="logout">
+		<locators>
+			<locator type="xpath">//id('links')/x:a[2]</locator>
+			<locator type="css">span#links a:nth-of-type(2)</locator>
+		</locators>
+	</element>
+</elements>

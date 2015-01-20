@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	
+	<element type="text" name="filter_by_incident">
+		<locators>
+			<locator type="id">incidentGroupSelect</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="assigned_incident_div">
+		<locators>
+			<locator type="id">incidentAssignedDiv</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="assigned_incident_sec">
+		<locators>
+			<locator type="css">section#assigned_incidentSec_7675 h2.title</locator>
+			<locator type="xpath">//div[@id='incidentAssignedDiv']/section[starts-with(@id,'assigned_incidentSec')]/h2[@class='title collapsed']</locator>
+		</locators>
+	</element>
+	
+	<!-- delete after modification -->
+	<element type="text" name="assigned_incident_img_bls">
+		<locators>
+			<locator type="id">e_assigned_icon0</locator>
+			<locator type="css">div#e_assigned0 h3 img</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="assigned_incident_img_bls_new">
+		<locators>
+			<locator type="css">div[id^='e_assigned'] h3 img</locator>
+		</locators>
+	</element>
+	
+	<element type="popup" name = "incident_details_popup_title">
+		<locators>
+			<locator type="css">h1.title</locator>
+			<locator type="xpath">//h1[@class='title']</locator>
+		</locators>
+	</element>
+	
+	<element type="popup" name = "event_response_title">
+		<locators>
+			<locator type="css">div.cards strong:contains('Show Responding To Event: ')</locator>
+			<locator type="xpath">//div[@class='cards']//strong[text()='Show Responding To Event:']</locator>
+		</locators>
+	</element>
+	
+	<element type="popup" name = "event_sub_title">
+		<locators>
+			<locator type="css">div#map div.info_content h2.sub_title</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='info_content']//h2[@class='sub_title']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="all_incident_div">
+		<locators>
+			<locator type="id">incidentAllDiv</locator>
+		</locators>
+	</element>
+	
+	<!-- <element type="text" name="all_incident_sec">
+		<locators>
+			<locator type="css">section#all_incidentSec_7675 h2.title</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section[@id='all_incidentSec_7675']/h2[@class='title collapsed']</locator>
+		</locators>
+	</element> -->
+	 
+	 <!-- Delete after modification -->
+	<element type="text" name="all_incident_img_bls">
+		<locators>
+			<locator type="id">e_all0</locator>
+			<locator type="css">div#e_all0 h3 img</locator>
+		</locators>	
+	</element>
+	
+	<element type="text" name="all_incident_img_bls_new">
+		<locators>
+			<locator type="css">div[id^='e_all'] h3 img</locator>
+			<locator type="xpath">//div[starts-with(@id,'e_all')]//h3//img</locator>
+		</locators>
+	</element>
+   
+    <!-- Incident Details locators for filter by all options starts here  -->
+	<element type="text" name="run_number_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(1)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Run Number')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_nature_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(2)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Nature')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(3)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Pickup:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_address_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(4)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Pickup Address:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_time_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(5)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Pickup Time:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="destination_all">
+		<locators>
+			<locator type="css">span#e_all_description0>dl.event-details>dt~dd:nth-of-type(6)</locator>
+			<locator type="xpath">//span[@id='e_all_description0']/dl/dt[contains(text(),'Destination:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="position_all">
+		<locators>
+			<locator type="xpath">//dl/dt[contains(text(),'Position:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	<!-- Incident Details locators for filter by all options ends here  -->
+		
+	<element type="text" name="run_number_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Run Number')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_nature_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Nature')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Pickup:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_address_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Pickup Address:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_time_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Pickup Time:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="destination_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]/dl/dt[contains(text(),'Destination:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="position_assigned">
+		<locators>
+			<locator type="xpath">//span[starts-with(@id,'e_assigned_description')]//following-sibling::dl/dt[contains(text(),'Position:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="magnifier_icon">
+		<locators>
+			<locator type="css">div#^="e_all" span.icons>a.zoomtoincident</locator>
+			<locator type="xpath">//div[starts-with(@id,'e_all')]//h3//span[@class='icons']/a[@class='zoomtoincident']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="magnifier_icon_assigned_incidents">
+		<locators>
+			<locator type="css">div#^="e_assigned" span.icons>a.zoomtoincident</locator>
+			<locator type="xpath">//div[starts-with(@id,'e_assigned')]//h3//span[@class='icons']/a[@class='zoomtoincident']</locator>
+		</locators>
+	</element>
+	
+	<!-- Incident pop up elements on Map -->
+	
+	<element type="text" name="run_number_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Run Number')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Run Number')]/following-sibling::dd[1]
+</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="nature_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Nature')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Nature')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Pickup')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_address_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Pickup Address')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup Address')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_time_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Pickup TimePickup Time')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup Time')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="destination_on_map_callout">
+		<locators>
+			<locator type="css">div#map dl.event-details>dt:contains('Destination')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Destination')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="num_of_incidents">
+		<locators>
+			<locator type="css">div#incidentAllDiv section</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']//section</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="first_incident">
+		<locators>
+			<locator type="css">div#incidentAllDiv section:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']//section[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name = "settings">
+		<locators>
+			<locator type="css">span#links a[href='#settingModal2']</locator>
+			<locator type="xpath">//span[@id='links']//a[@href='#settingModal2']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_tab">
+		<locators>
+			<locator type="id">tabVehicle</locator>
+			<locator type="xpath">//li[@id='tabVehicle']/a</locator>
+			<locator type="css">li#tabVehicle a</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_search_label">
+		<locators>
+			<locator type="id">incidentSearchLabel</locator>
+			<locator type="css">input#incidentSearchLabel</locator>
+			<locator type="xpath">//input[@id='incidentSearchLabel']</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name="search_link">
+		<locators>
+			<locator type="css">div.search-box a:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@class='search-box']//a[@title='Filter Incidents']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_sec_als">
+		<locators>
+			<locator type="css">section#all_incidentSec_7677 h2.title</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section[@id='all_incidentSec_7677']/h2[@class='title collapsed']</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name="clear_link_incident">
+		<locators>
+			<locator type="css">div.search-box a:nth-of-type(2)</locator>
+			<locator type="xpath">//div[@class='search-box']//a[@title='Clear Incident Filter']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_collapse">
+		<locators>
+			<locator type="css">section#all_incidentSec_7675 h2.title</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section[@id='all_incidentSec_7675']/h2[@class='title']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_cluster_label">
+		<locators>
+			<locator type="css">div#map div.gmnoprint img[src="/images/cluster1.png"]</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='gmnoprint']//img[contains(@src,'images/cluster1.png')]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_cluster_label_general">
+		<locators>
+			<locator type="css">div#map div.gmnoprint img[src="/images/cluster1.png"]</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='gmnoprint']//img[contains(@src,'images/cluster')]</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="incident_count">
+			<locators>
+				<locator type="css">div#incidentAllDiv>section</locator>
+				<locator type="xpath">//div[@id='incidentAllDiv']/section</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="incident_count_new">
+			<locators>
+				<locator type="css">div#incidentAllDiv>section h2</locator>
+				<locator type="xpath">//div[@id='incidentAllDiv']/section//h2</locator>
+			</locators>
+	</element>
+	
+	<element type="text" name="incident_count_on_cluster">
+			<locators>
+				<locator type="css">div.clusterLabel</locator>
+				<locator type="xpath">//div[@class='clusterLabel']/section</locator>
+			</locators>
+	</element>
+	
+	<!-- All incident pick up address in incident tab -->
+	
+	<element type="text" name="all_incident_pickup_address">
+		<locators>
+			<locator type="xpath">//div[@id='incidentAllDiv']//section//span//dt[contains(text(),'Pickup Address')]//following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<!-- Routing tab -->
+	<element type="link" name="routing_tab">
+		<locators>
+			<locator type="xpath">//li[@id='tabRouting']/a</locator>
+			<locator type="css">li#tabRouting a</locator>
+		</locators>
+	</element>
+	<!-- end -->
+	
+	<element type="section" name="all_incident_sec">
+		<locators>
+			<locator type="css">div#incidentAllDiv>section>h2.title.collapsed</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section/h2[@class='title collapsed']</locator>
+		</locators>
+	</element>
+	
+	<element type="section" name="all_incident_sec_count">
+		<locators>
+			<locator type="css">div#incidentAllDiv>section>h2</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section/h2</locator>
+		</locators>
+	</element>
+	
+	<!-- Incident mouse over elements on Map -->
+	
+	<element type="text" name="run_number_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Run Number')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),"Run Number")]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_nature_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Nature')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),"Nature:")]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Pickup')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_address_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Pickup Address')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup Address')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pickup_time_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Pickup TimePickup Time')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup Time')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="destination_on_mouse_over_incident">
+		<locators>
+			<locator type="css">div#map div.infoBox dl.event-details>dt:contains('Destination')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Destination')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="history_menu_item">
+		<locators>
+			<locator type="xpath">//header[@id='main']//ul[@id='utility']//li[@id="historyReportingMenuItem"]//a</locator>
+			<locator type="css">header#main ul#utility li#historyReportingMenuItem a</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="incident_section_heading">
+		<locators>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section[1]</locator>
+			<locator type="css">div#incidentAllDiv section:nth-of-type(1)</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="incident_all_div">
+		<locators>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section/h2</locator>
+			<locator type="css">div#incidentAllDiv>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_ranking">
+		<locators>
+			<locator type="xpath">//div[@id='e_all0']//h3//span[@class='icons']/a[@class='candidatesranking']</locator>
+			<locator type="css">div#e_all0 h3 span.icons>a.candidatesranking</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_ranking_pop_up">
+		<locators>
+			<locator type="xpath">//span[@id='ui-dialog-title-RankingDialog']</locator>
+			<locator type="css">span#ui-dialog-title-RankingDialog</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_vehicle">
+		<locators>
+			<locator type="xpath">//div[@id='RankingDialog']//div[@id='divCandidates']/table//tr[3]</locator>
+			<locator type="css">div#RankingDialog div#divCandidates table tr:nth-of-type(3)</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_vehicle_name_list">
+		<locators>
+			<locator type="xpath">//div[@id='RankingDialog']//div[@id='divCandidates']/table//tr[3]</locator>
+			<locator type="css">div#RankingDialog div#divCandidates table tr:nth-of-type(3)</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_vehicle_name_list_new">
+		<locators>
+			<locator type="xpath">//div[@id='RankingDialog']//div[@id='divCandidates']/table//td[1]</locator>
+			<locator type="css">div#RankingDialog div#divCandidates table tr>td:nth-of-type(1)</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="second_incident_sec">
+		<locators>
+			<locator type="css">section#all_incidentSec_7677 h2.title</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']/section[@id='all_incidentSec_7677']/h2[@class='title collapsed']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_ranking_of_second_incident">
+		<locators>
+			<locator type="xpath">//div[@id='e_all1']//h3//span[@class='icons']/a[@class='candidatesranking']</locator>
+			<locator type="css">div#e_all1 h3 span.icons>a.candidatesranking</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="sort_by_in_second_colum">
+		<locators>
+			<locator type="xpath">//div[@id='divCandidates']//tr[2]/th[2]</locator>
+			<locator type="css">div#divCandidates tr:nth-of-type(2)>th:nth-of-type(2)</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="estimate_time">
+		<locators>
+			<locator type="xpath">//div[@id='divCandidates']//tr//td/div[contains(text(),"min")]</locator>
+			<locator type="css">div#divCandidates tr td>div:contains("min")</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="driving_distance">
+		<locators>
+			<locator type="xpath">//div[@id='divCandidates']//tr//td/div[contains(text(),"miles")]</locator>
+			<locator type="css">div#divCandidates tr td>div:contains("miles")</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="sort_by_driving_distance">
+		<locators>
+		    <locator type="id">//input[@id='rankingSortByDistance']</locator>
+			<locator type="xpath">//input[@id='rankingSortByDistance']</locator>
+			<locator type="css">input#rankingSortByDistance</locator>
+		</locators>
+	</element>
+	
+	<!-- Pending Incident div -->
+	<element type="text" name="pending_incident_div">
+		<locators>
+			<locator type="id">incidentPendingDiv</locator>
+			<locator type="xpath">//div[@id='incidentPendingDiv']</locator>
+			<locator type="css">div#incidentPendingDiv</locator>
+		</locators>
+                      </element>
+  
+  	<element type="popup" name="incident_with_out_assigned_vehicle">
+		<locators>
+			<locator type="css">div.cards strong:contains('No responding vehicle')</locator>
+			<locator type="xpath">//div[@class='cards']//strong</locator>
+		</locators>
+	</element>
+	
+	<element type="section" name="pending_incident_sec">
+		<locators>
+			<locator type="css">div#incidentPendingDiv section h2.title.collapsed</locator>
+			<locator type="xpath">//div[@id='incidentPendingDiv']//section//h2[@class='title collapsed']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="pending_incident_img_bls">
+		<locators>
+			<locator type="id">e_pending_icon1</locator>
+			<locator type="css">div#e_pending1 h3 img</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_comments">
+		<locators>
+			<locator type="css">div#incidentAllDiv div dl>dt:contains('Comments:')</locator>
+			<locator type="xpath">//div[@id='incidentAllDiv']//div//dl/dt[contains(text(),'Comments:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+</elements>

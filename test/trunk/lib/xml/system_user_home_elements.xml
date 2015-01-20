@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+		
+	<element type="link" name ="create_user">
+		<locators>
+			<locator type="id">s_sub_users-new--link</locator>
+			<locator type="css">a#s_sub_users-new--link</locator>
+			<locator type="xpath">//a[@id='as_sub_users-new--link']</locator>
+		</locators>
+	</element>
+</elements>

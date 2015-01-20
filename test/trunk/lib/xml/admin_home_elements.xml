@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="link" name ="system_user_link">
+		<locators>
+			<locator type="id">adminsystemusers</locator>
+			<locator type="css">td#adminsystemusers>a</locator>
+			<locator type="xpath">//td[@id='adminsystemusers']/a</locator>
+		</locators>
+	</element>
+</elements>

@@ -1,0 +1,25 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<elements>
+
+	<element type="checkbox" name="select_all_incidents">
+		<locators>
+			<locator type="css">input#byAllCallTypes</locator>
+			<locator type="id">byAllCallTypes</locator>
+			<locator type="xpath">//input[@id='byAllCallTypes']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="save_incidents_filter">
+		<locators>
+			<locator type="css">div[id='incidents'] button[title='Update call type filter.']</locator>
+			<locator type="xpath">//div[@id='incidents']//button[@title='Update call type filter.']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="close">
+		<locators>
+			<locator type="xpath">//div[@id='settingModal2']//button[contains(text(),'x')]</locator>
+		</locators>
+	</element>
+	
+</elements>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="img" name = "refresh">
+		<locators>
+			<locator type="id">refresh</locator>
+			<locator type="css">input#refresh</locator>
+			<locator type="xpath">//input[@id='refresh']</locator>
+		</locators>
+	</element>
+	
+    <element type="text" name="zoom_in">
+		<locators>
+			<locator type="xpath">//div[@class='gmnoprint']//div[@title='Zoom in']</locator>
+			<locator type="css">div.gmnoprint div[title='Zoom in']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="zoom_out">
+		<locators>
+			<locator type="xpath">//div[@class='gmnoprint']//div[@title='Zoom out']</locator>
+			<locator type="css">div.gmnoprint div[title='Zoom out']</locator>
+		</locators>
+	</element>
+	
+	<element type="textContent" name="satellite_tab">
+	    <locators>
+	    	<locator type="css">div.gmnoprint>div.gm-style-mtc>div:contains('Satellite')</locator>
+	    	<locator type="xpath">//div[@class='gmnoprint']/div[@class='gm-style-mtc']/div[text()='Satellite']</locator>
+	    </locators>	
+    </element>
+    
+    <element type="checkbox" name="satellite_stree_labels">
+	    <locators>
+	    	<locator type="xpath">//div[@class='gmnoprint']/div[@class='gm-style-mtc'][2]/div/div[2]//span</locator>
+	    </locators>	
+    </element>
+    
+     <element type="text" name="map_check_box">
+	    <locators>
+	    	<locator type="css">div.gmnoprint>div.gm-style-mtc>div>div:nth-of-type(2)>label:contains('Terrain')</locator>
+	    	<locator type="xpath">//div[@class='gmnoprint']/div[@class='gm-style-mtc'][1]/div/div</locator>
+	    </locators>	
+    </element>
+    
+    <element type="textContent" name="map_tab">
+	    <locators>
+	    	<locator type="css">div.gmnoprint>div.gm-style-mtc>div:contains('Map')</locator>
+	    	<locator type="xpath">//div[@class='gmnoprint']/div[@class='gm-style-mtc']/div[text()='Map']</locator>
+	    </locators>	
+    </element>
+    
+    <element type="text" name="weather">
+		<locators>
+			<locator type="xpath">//div[@class='toolbar-right pull-right']/input[@id='weather']</locator>
+			<locator type="css">input#weather</locator>
+			<locator type="id">weather</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="display_weather">
+		<locators>
+			<locator type="css">div#dropdown_weather>div>p:contains('Radar Overlay On Map')</locator>
+			<locator type="xpath">//div[@id='dropdown_weather']/div/p[contains(text(),'Radar Overlay On Map')]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="weather_alert">
+		<locators>
+			<locator type="css">div#dropdown_weather>div>p:contains('Weather Alerts On Map')</locator>
+			<locator type="xpath">//div[@id='dropdown_weather']/div/p[contains(text(),'Weather Alerts On Map')]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="display_weather_conditions">
+		<locators>
+			<locator type="css">div#dropdown_weather>div>p:contains('Weather Conditions Markers On Map')</locator>
+			<locator type="xpath">//div[@id='dropdown_weather']/div/p[contains(text(),'Weather Conditions Markers On Map')]</locator>
+		</locators>
+	</element>
+	
+	 <element type="text" name="pan_right">
+		<locators>
+			<locator type="css">div[title='Pan right']</locator>
+			<locator type="xpath">//div[@title='Pan right']</locator>
+		</locators>
+	</element>
+	
+	<element type = "list" name = "map_view_select">
+		<locators>
+			<locator type = "id">mapViewSelect</locator>
+			<locator type = "css">#mapViewSelect</locator>
+			<locator type = "xpath">//input[@id='mapViewSelect']</locator>
+		</locators>
+	</element>
+	
+	<!--  images -->
+	<element type = "img" name = "weather_condition_marker">
+		<locators>
+			<locator type = "css">div.gmnoprint img[src='/images/sunny.png']</locator>
+			<locator type = "xpath">//div[@class='gmnoprint']//img[@src='/images/sunny.png']</locator>
+		</locators>
+	</element>
+	
+	<element type = "img" name = "landmarks">
+		<locators>
+			<locator type = "css">div.gmnoprint img[src='/images/building.png']</locator>
+			<locator type = "xpath">//div[@class='gmnoprint']//img[@src='/images/building.png']</locator>
+		</locators>
+	</element>
+	
+	<element type = "img" name = "available_vehicles">
+		<locators>
+			<locator type = "css">div.gmnoprint img[src='/images/ambulance.png']</locator>
+			<locator type = "xpath">//div[@class='gmnoprint']//img[@src='/images/ambulance.png']</locator>
+		</locators>
+	</element>
+	
+	<element type = "label" name = "vehicle_labels">
+		<locators>
+			<locator type = "css">span.feLabel</locator>
+			<locator type = "xpath">//span[@class='feLabel']</locator>
+		</locators>
+	</element>
+	
+	<element type = "label" name = "vehicle_speed_labels">
+		<locators>
+			<locator type = "css">span.feSpeedLabel</locator>
+			<locator type = "xpath">//span[@class='feSpeedLabel']</locator>
+		</locators>
+	</element>
+	
+	
+	 <element type="button" name="add_weather_condition_marker">
+			<locators>
+				<locator type="xpath">//button[text()='Add One Weather Conditions Marker']</locator>
+			</locators>
+	</element>
+	
+	 <element type="input" name="weather_condition_marker_input">
+			<locators>
+				<locator type="xpath">//input[@id='display_weather_conditions']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="weather_alerts">
+			<locators>
+				<locator type="id">display_alerts</locator>
+				<locator type="css">#display_alerts</locator>
+				<locator type="xpath">//input[@id='display_alerts']</locator>
+			</locators>
+	</element>
+	
+	<element type="link" name="map_filters">
+			<locators>
+				<locator type="css">a[href='#mapFilterModal2']</locator>
+				<locator type="xpath">//a[@href='#mapFilterModal2']</locator>
+			</locators>
+	</element>
+	
+	<!-- Map view select -->
+	
+		<element type="list" name="select_map_view">
+			<locators>
+				<locator type="css">select#mapViewSelect</locator>
+				<locator type="id">mapViewSelect</locator>
+				<locator type="xpath">//select[@id='mapViewSelect']</locator>
+			</locators>
+	</element>
+	
+	<element type="input" name="save_map_view">
+			<locators>
+				<locator type="css">#save</locator>
+				<locator type="id">save</locator>
+				<locator type="xpath">//input[@id='save']</locator>
+			</locators>
+	</element>
+</elements>

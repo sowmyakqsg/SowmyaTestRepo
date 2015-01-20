@@ -1,0 +1,45 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="modal_window" name = "settings">
+		<locators>
+			<locator type = "css">div[id='settingModal2'][style='display: block;']</locator>
+			<locator type="xpath">//div[@id='settingModal2'][@style='display: block;']</locator>
+		</locators>
+	</element>
+	
+	<element type="checkbox" name="select_all_vehicle">
+		<locators>
+			<locator type="css">input#byAllVehicles</locator>
+			<locator type="id">byAllVehicles</locator>
+			<locator type="xpath">//input[@id='byAllVehicles']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="save_vehicle_filter">
+		<locators>
+			<locator type="css">div[id='vehicles'] button[title='Update vehicle filter.']</locator>
+			<locator type="xpath">//div[@id='vehicles']//button[@title='Update vehicle filter.']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="close">
+		<locators>
+			<locator type="xpath">//div[@id='settingModal2']//button[contains(text(),'x')]</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="incident_tab">
+		<locators>
+			<locator type="css">ul#settingsTabs li a[href='#incidents']</locator>
+			<locator type="xpath">//ul[@id='settingsTabs']//li//a[@href='#incidents']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="other_tab">
+		<locators>
+			<locator type="css">ul#settingsTabs li a[href='#other']</locator>
+			<locator type="xpath">//ul[@id='settingsTabs']//li//a[@href='#other']</locator>
+		</locators>
+	</element>
+	
+</elements>

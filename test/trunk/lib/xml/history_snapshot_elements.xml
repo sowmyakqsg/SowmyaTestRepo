@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+ 	<element type="text" name="snap_shot_run_number">
+		<locators>
+			<locator type="xpath">//div[@id='snapshotDiv']//label[contains(text(),"Run Number")]</locator>
+			<locator type="css">div#snapshotDiv label:contains("Run Number")</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snap_shot_date_time">
+		<locators>
+			<locator type="xpath">//div[@id='snapshotDiv']//label[contains(text(),"Date-Time")]</locator>
+			<locator type="css">div#snapshotDiv label:contains("Date-Time")</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snap_shot_input_run_number">
+		<locators>
+		    <locator type="id">runNumberSnapshot</locator>
+			<locator type="xpath">//input[@id='runNumberSnapshot']</locator>
+			<locator type="css">input#runNumberSnapshot</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snap_shot_input_search">
+		<locators>
+		    <locator type="id">histSnapSearchButton</locator>
+			<locator type="xpath">//button[@id='histSnapSearchButton']</locator>
+			<locator type="css">button#histSnapSearchButton</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="search_results">
+		<locators>
+			<locator type="xpath">//div[@id="snapshotGroupDiv"]/section</locator>
+			<locator type="css">div#snapshotGroupDiv>section</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snap_shot_group_section_one">
+		<locators>
+			<locator type="xpath">//div[@id="snapshotGroupDiv"]/section/h2</locator>
+			<locator type="css">div#snapshotGroupDiv>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snap_shot_group_section_one">
+		<locators>
+			<locator type="xpath">//div[@id="snapshotGroupDiv"]/section/h2</locator>
+			<locator type="css">div#snapshotGroupDiv>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_snap_shot_group_section">
+		<locators>
+			<locator type="xpath">//section[@id='incidentSnapshotGroupSec']/div[@class='collapsable-content']/section/h2</locator>
+			<locator type="css">section#incidentSnapshotGroupSec>div.collapsable-content>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_snap_shot_group_section_two">
+		<locators>
+			<locator type="xpath">//section[@id='incidentSnapshotGroupSec']/div[@class='collapsable-content']/section/div/section/h2</locator>
+			<locator type="css">section#incidentSnapshotGroupSec>div.collapsable-content>section>div>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_snap_shot_magnifier_icon">
+		<locators>
+			<locator type="xpath">//span[@class='icons']/a[@title='Locate on Map']</locator>
+			<locator type="css">span.icons>a.zoomtoincident</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_event_description">
+		<locators>
+			<locator type="xpath">//span[@class='e_alldescription']</locator>
+			<locator type="css">span.e_alldescription</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_event_description_on_map">
+		<locators>
+			<locator type="xpath">//div[@id='map']//div[@class='info_content']</locator>
+			<locator type="css">div#map div.info_content</locator>
+		</locators>
+	</element>
+	
+	<!-- Element locators Changed xpath starts  -->
+	
+	<element type="text" name="snapshot_run_number_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains("Run Number")>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Run Number')]/following-sibling::dd[1]
+            </locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_nature_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Nature')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Nature')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_pickup_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Pickup')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Pickup:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_pickup_address_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Pickup Address:')~dd</locator>
+			<locator type="xpath">//div[@id='map']//dt[contains(text(),'Address:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+    <!-- <element type="text" name="snapshot_pickup_address_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Pickup Address')~dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Address:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element> -->
+	
+	<element type="text" name="snapshot_pickup_time_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Pickup Time:')~dd</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dt[contains(text(),'Time:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_destination_on_map">
+		<locators>
+			<locator type="css">div#map div.cards dl.event-details>dt:contains('Destination')>dd:nth-of-type(1)</locator>
+			<locator type="xpath">//div[@id='map']//div[@class="info_content"]//dl[@class='event-details dl-horizontal']/dt[contains(text(),'Destination')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<!-- Element locators Changed xpath ends  -->
+	
+	<element type="text" name="snapshot_run_number">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Run Number")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Run Number')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_nature">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Nature")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Nature')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_pickup">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Pickup")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Pickup')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_pickup_address">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Pickup Address")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Pickup Address:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_pickup_time">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Pickup Time")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Pickup Time:')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="snapshot_destination">
+		<locators>
+			<locator type="css">span#e_all_description0 dt:contains("Destination")~dd</locator>
+			<locator type="xpath">//span[starts-with(@id,'e_all_description')]//dt[contains(text(),'Destination')]/following-sibling::dd[1]</locator>
+		</locators>
+	</element>
+   
+   <element type="text" name="filter_by_incident_snap_shot">
+		<locators>
+		    <locator type="id">toggleSnapshotIncidentVehicle</locator>
+			<locator type="xpath">//select[@id='toggleSnapshotIncidentVehicle']</locator>
+			<locator type="css">select#toggleSnapshotIncidentVehicle</locator>
+		</locators>
+  </element>
+  
+   <element type="text" name="incident_snap_shot_group">
+		<locators>
+		    <locator type="id">incidentSnapshotGroupSec</locator>
+			<locator type="xpath">//section[@id='incidentSnapshotGroupSec']</locator>
+			<locator type="css">section#incidentSnapshotGroupSec</locator>
+	   </locators>
+   </element>
+   
+    <element type="text" name="vehicle_snap_shot_group">
+		<locators>
+		    <locator type="id">vehicleSnapshotGroupSec</locator>
+			<locator type="xpath">//section[@id='vehicleSnapshotGroupSec']</locator>
+			<locator type="css">section#vehicleSnapshotGroupSec</locator>
+	   </locators>
+   </element>
+   
+    <element type="text" name="snap_shot_minutes">
+		<locators>
+			<locator type="xpath">//select[@id='snapshotMinutes']/option[@value='1']</locator>
+			<locator type="css">select#snapshotMinutes>option</locator>
+	   </locators>
+   </element>
+   
+   <element type="text" name="time_interval_snap_shot">
+		<locators>
+			<locator type="xpath">//select[@id='snapshotMinutes']</locator>
+			<locator type="css">select#snapshotMinutes</locator>
+	   </locators>
+   </element>
+</elements>

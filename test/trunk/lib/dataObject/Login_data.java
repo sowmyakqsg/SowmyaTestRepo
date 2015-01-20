@@ -1,0 +1,136 @@
+package lib.dataObject;
+
+public class Login_data {
+
+		public String username1 = "Test1",
+				 	  username2 = "Test2",
+				 	  username3 = "Test3",
+				 	  username4 = "Test4",
+				 	  username5 = "Test5",
+				 	  username222 = "Test222",
+				      password = "password1",
+				      company = "QSG",
+				      adminUserName = "QSG",
+				      adminPassword = "QSGadmin",
+	
+				    //History Feature Test Users
+				    histroy_user1 = "HistoryUserTest1",
+				    history_user2 = "HistoryUserTest2",
+				    histroy_user3 = "HistoryUserTest3",
+				    history_user4 = "HistoryUserTest4",
+				    
+				    histroy_user5 = "HistoryUserTest5",
+				    history_user6 = "HistoryUserTest6",
+				    histroy_user7 = "HistoryUserTest7",
+				    history_user8 = "HistoryUserTest8",
+				    histroy_user9 = "HistoryUserTest9",
+				    history_user10 = "HistoryUserTest10",
+				    history_user11 = "HistoryUserTest11",
+					history_user12 = "HistoryUserTest12",
+					history_user13 = "HistoryUserTest13",
+				    
+				    
+				    //Incident Feature Test Users
+				    incident_user1 = "IncidentUserTest1",
+				    incident_user2 = "IncidentUserTest2",
+				    incident_user3 = "IncidentUserTest3",
+				    incident_user4 = "IncidentUserTest4",
+				    incident_user5 = "IncidentUserTest5",
+				    incident_user6 = "IncidentUserTest6",
+				    incident_user7 = "IncidentUserTest7",
+				    incident_user8 = "IncidentUserTest8",
+				    incident_user9 = "IncidentUserTest9",
+				    incident_user10 = "IncidentUserTest10",
+				    incident_user11 = "IncidentUserTest11",
+				    incident_user12 = "IncidentUserTest12",
+				    incident_user13 = "IncidentUserTest13",
+				    incident_user14 = "IncidentUserTest14",
+				    incident_user15 = "IncidentUserTest15",
+				    incident_user16 = "IncidentUserTest16",
+				    incident_user17 = "IncidentUserTest17",
+				    incident_user18 = "IncidentUserTest18",
+				    		 
+				    
+				    //Vehicle Feature Test Users
+		            vehicle_user1 = "VehicleUserTest1",
+				    vehicle_user2 = "VehicleUserTest2",
+				    vehicle_user3 = "VehicleUserTest3",
+				    vehicle_user4 = "VehicleUserTest4",
+				    vehicle_user5 = "VehicleUserTest5",
+				    vehicle_user6 = "VehicleUserTest6",
+				    vehicle_user7 = "VehicleUserTest7",
+				    vehicle_user8 = "VehicleUserTest8",
+				    vehicle_user9 = "VehicleUserTest9",
+				    vehicle_user10 = "VehicleUserTest10",
+				    vehicle_user11 = "VehicleUserTest11",
+		
+					//Map Feature Test Users
+		             map_user1 = "MapUserTest1",
+		             map_user2 = "MapUserTest2",
+		             map_user3 = "MapUserTest3", 
+		             map_user4 = "MapUserTest4",
+		             map_user5 = "MapUserTest5",
+		             map_user6 = "MapUserTest6",
+		             map_user7 = "MapUserTest7",
+		             map_user8 = "MapUserTest8",
+		             map_user9 = "MapUserTest9",
+		             map_user10 = "MapUserTest10",
+		             map_user11 = "MapUserTest11",
+		             map_user12 = "MapUserTest12",
+		             map_user13 = "MapUserTest13",
+		             map_user14 = "MapUserTest14",
+		             map_user15 = "MapUserTest15",
+		             map_user16 = "MapUserTest16",
+		             map_user17 = "MapUserTest17",
+		             map_user18 = "MapUserTest18",
+		             map_user19 = "MapUserTest19",
+		             map_user21 = "MapUserTest21",
+		             map_user20 = "MapUserTest20",
+		             map_user22 = "MapUserTest2",
+					
+					//LandMark Feature Test Users
+			        landmarks_user1 = "LandmarksUserTest1",
+			        landmarks_user2 = "LandmarksUserTest2",
+			        landmarks_user3 = "LandmarksUserTest3", 
+			        landmarks_user4 = "LandmarksUserTest4",
+			        landmarks_user5 = "LandmarksUserTest5",
+			        
+			        //Settings Feature Test Users
+			        settings_user1 = "SettingsUserTest1",
+			        settings_user2 = "SettingsUserTest2",
+			        settings_user3 = "SettingsUserTest3",
+			        settings_user4 = "SettingsUserTest4",
+			        settings_user5 = "SettingsUserTest5",
+			        settings_user6 = "SettingsUserTest6",
+			        settings_user7 = "SettingsUserTest7",
+			        settings_user8 = "SettingsUserTest8",
+			        settings_user9 = "SettingsUserTest9",
+			        settings_user10 = "SettingsUserTest10",
+			        settings_user11 = "SettingsUserTest11",
+			        
+			        //Routing Feature Test Users
+			        routing_user1 = "RoutingUserTest1",
+			        routing_user2 = "RoutingUserTest2",
+			        routing_user3 = "RoutingUserTest3",
+			        routing_user4 = "RoutingUserTest4",
+			        routing_user5 = "RoutingUserTest5",
+			        routing_user6 = "RoutingUserTest6",
+			        routing_user7 = "RoutingUserTest7",
+			        routing_user8 = "RoutingUserTest8",
+			        routing_user9 = "RoutingUserTest9",
+			        routing_user10 = "RoutingUserTest10",
+			        routing_user11 = "RoutingUserTest11",
+		
+					 //admin system user data
+					
+			        history_view = "Allowed",
+			        mobile_access = "True",
+			        defualt_map_view = "Default",
+			        incident_captions = "Allowed",
+			        incident_details = "Restricted",
+			        sending_message = "Allowed",
+			        mutual_aid_partner_view = "Allowed",
+			        mdt_access = "No",
+			        crew_member = "No",
+			        pcr_administrator = "False";
+}

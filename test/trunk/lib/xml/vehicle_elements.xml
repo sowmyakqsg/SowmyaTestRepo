@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type = "textContent" name ="welcome_text">
+		<locators>
+			<locator type="css">span#welcome strong#companyusername</locator>
+			<locator type="xpath">//span[@id='welcome']//strong[@id='companyusername']</locator>
+		</locators>
+	</element>
+	
+	<element type="list" name = "vehicle_group_select">
+		<locators>
+			<locator type="css">#vehicleGroupSelect</locator>
+			<locator type="id">vehicleGroupSelect</locator>
+			<locator type="xpath">//select[@id='vehicleGroupSelect']</locator>
+		</locators>
+	</element>
+	
+	<element type="img" name="first_vehicle">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) img</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table[1]//img</locator>
+		</locators>
+	</element>
+	
+	<!-- First  vehicle features when filter vehicle by 'All'-->
+	
+	<element type="text" name="get_first_vehicle_name">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td.vehicleName p</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table[1]//td[@class='vehicleName']/p</locator>
+		</locators>
+	</element>
+	
+    <element type="text" name="first_vehicle_color">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td div#v_status_circle0</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table[1]//td//div[@id='v_status_circle0']</locator>
+		</locators>
+	</element>
+
+    <element type="text" name="first_vehicle_color_new">
+		<locators>
+			<locator type="css">div#v_status_circle0</locator>
+			<locator type="xpath">//div[@id='v_status_circle0']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="all_filter_first_vehicle_status">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table[1]//td[@class='vehicleName']//following-sibling::td[@id='vtd_status_name0']</locator>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td.vehicleName~td#vtd_status_name0</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="first_vehicle_speed">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table[1]//td//span[@class='vehicleSpeedTime']</locator>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td span.vehicleSpeedTime</locator>
+		</locators>
+	</element>
+	
+	<!-- End -->
+	<element type="popup" name = "vehicle_details_popup_title">
+		<locators>
+			<locator type="css">h1.title</locator>
+			<locator type="xpath">//h1[@class='title']</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="vehile_details_rollover">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td.vehicleName~td.vehileDetailsRollover</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name="magnifier_icon">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table:nth-of-type(1) td.vehicleName~td.vehileDetailsRollover a.zoomtovehicle</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="incident_tab">
+		<locators>
+			<locator type="id">tabIncident</locator>
+			<locator type="xpath">//li[@id='tabIncident']/a</locator>
+			<locator type="css">li#tabIncident a</locator>
+		</locators>
+	</element>
+
+	<element type="text" name="status_filter_first_vehicle_status">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleStatusDiv']//section</locator>
+			<locator type="css">div#vehicleStatusDiv section</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="group_filter_first_vehicle_status">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleStatusDiv']//section</locator>
+			<locator type="css">div#vehicleStatusDiv section</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="group_filter_first_vehicle_group">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleGroupDiv']//section</locator>
+			<locator type="css">div#vehicleGroupDiv section</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="landmark_tab">
+		<locators>
+			<locator type="id">tabLandmarks</locator>
+			<locator type="xpath">//li[@id='tabLandmarks']/a</locator>
+			<locator type="css">li#tabLandmarks a</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name = "settings">
+		<locators>
+			<locator type="css">span#links a[href='#settingModal2']</locator>
+			<locator type="xpath">//span[@id='links']//a[@href='#settingModal2']</locator>
+		</locators>
+	</element>	
+	
+	<element type="count" name = "number_of_vehicles">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "time">
+		<locators>
+			<locator type="css">span#loader_label strong</locator>
+			<locator type="xpath">//span[@id='loader_label']//strong</locator>
+		</locators>
+	</element>
+	
+	<!-- All vehicles names in vehicles tab -->
+	
+	<element type="text" name="all_vehicle_names">
+		<locators>
+			<locator type="css">div#vehicleAllDetails table td.vehicleName p</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table//td[@class='vehicleName']/p</locator>
+		</locators>
+	</element>
+	
+	<!-- Routing tab -->
+	<element type="link" name="routing_tab">
+		<locators>
+			<locator type="xpath">//li[@id='tabRouting']/a</locator>
+			<locator type="css">li#tabRouting a</locator>
+		</locators>
+	</element>
+	<!-- end -->
+	
+	<element type="text" name = "search_location">
+		<locators>
+			<locator type="css">div.search-box>input#keywords1</locator>
+			<locator type="xpath">//div[@class='search-box']/input[@id='keywords1']</locator>
+		</locators>
+	</element>
+	
+	<element type="link" name = "search_link">
+		<locators>
+			<locator type="css">div#toolbar a[title="Search"]</locator>
+			<locator type="xpath">//div[@id='toolbar']//a[@title='Search']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "search_dialog">
+		<locators>
+			<locator type="css">div#localSearchDialog</locator>
+			<locator type="xpath">//div[@id='localSearchDialog']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "search_location_list">
+		<locators>
+			<locator type="css">div#localSearchDialog select#lssearchwell</locator>
+			<locator type="xpath">//select[@id='lssearchwell']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "search_location_on_map">
+		<locators>
+			<locator type="css">div.gm-style-iw>div</locator>
+			<locator type="xpath">//div[@class='gm-style-iw']/div</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "local_search_dialog_box">
+		<locators>
+			<locator type="css">span#ui-dialog-title-localSearchDialog</locator>
+			<locator type="xpath">//span[@id='ui-dialog-title-localSearchDialog']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "local_search_dialog_box_drag">
+		<locators>
+			<locator type="css">div.ui-dialog-titlebar</locator>
+			<locator type="xpath">//div[@class='ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix']/span[@id='ui-dialog-title-localSearchDialog']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "close_local_search_dialog_box">
+		<locators>
+			<locator type="css">div#ui-dialog-title-localSearchDialog</locator>
+			<locator type="xpath">//span[@id='ui-dialog-title-localSearchDialog']/following::a[@role='button']</locator>
+		</locators>
+	</element>
+	
+	  <element type="text" name="history_menu_item">
+		<locators>
+			<locator type="xpath">//header[@id='main']//ul[@id='utility']//li[@id="historyReportingMenuItem"]//a</locator>
+			<locator type="css">header#main ul#utility li#historyReportingMenuItem a</locator>
+		</locators>
+	 </element>
+	 
+	 <element type="text" name="vehicle_group_section">
+		<locators>
+			<locator type="id">vehicleGroupDiv</locator>
+			<locator type="xpath">//div[@id='vehicleGroupDiv']</locator>
+			<locator type="css">div#vehicleGroupDiv</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_No_group_section">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleGroupDiv']/section[@sectionname='No Group']/h2</locator>
+			<locator type="css">div#vehicleGroupDiv>section</locator>
+		</locators>
+	</element>
+	
+		<element type="text" name="vehicle_all_details">
+		<locators>
+		    <locator type="id">vehicleAllDetails</locator>
+			<locator type="xpath">//div[@id='vehicleAllDetails']</locator>
+			<locator type="css">div#vehicleAllDetails</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="candidate_vehicle_available">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleAllDetails']//table//td[contains(text(),"Partially Avail")]//preceding-sibling::td[@class='vehicleName']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_status_section">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleStatusDiv']/section/h2</locator>
+			<locator type="css">div#vehicleStatusDiv>section>h2</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_details_rollover">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleStatusDiv']//td[@class='vehileDetailsRollover']/div[@class='vehileDetailsContainer']/span</locator>
+			<locator type="css">div#vehicleStatusDiv td.vehileDetailsRollover>div.vehileDetailsContainer>span</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_responding_details">
+		<locators>
+			<locator type="xpath">//div[@class='cards']//strong</locator>
+			<locator type="css">div.cards strong</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_title_mouse_over">
+		<locators>
+			<locator type="xpath">//div[@id='map']//div[@class='infoBox']/div/h1[@class='title']</locator>
+			<locator type="css">div#map div.infoBox>div>h1.title</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="vehicle_status_position_mouse_over">
+		<locators>
+			<locator type="xpath">//div[@class='infoBox']/div//none</locator>
+			<locator type="css">div.infoBox div none</locator>
+		</locators>
+	</element>
+	
+	<element type="division" name="vehicle_status_division">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleStatusDiv']</locator>
+			<locator type="css">div#vehicleStatusDiv</locator>
+		</locators>
+	</element>
+	
+	<element type="division" name="vehicle_group_division">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleGroupDiv']</locator>
+			<locator type="css">div#vehicleGroupDiv</locator>
+		</locators>
+	</element>
+	
+	<element type="division" name="vehicle_all_division">
+		<locators>
+			<locator type="xpath">//div[@id='vehicleAllDiv']</locator>
+			<locator type="css">div#vehicleAllDiv</locator>
+		</locators>
+	</element>
+</elements>

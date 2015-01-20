@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	
+	<element type="text" name="username">
+		<locators>
+			<locator type="id">user_login</locator>
+			<locator type="css">#user_login</locator>
+			<locator type="xpath">//input[@id='user_login']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="password">
+		<locators>
+			<locator type="id">user_textpassword</locator>
+			<locator type="css">#user_textpassword</locator>
+			<locator type="xpath">//input[@id='user_textpassword']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name="company">
+		<locators>
+			<locator type="id">user_company</locator>
+			<locator type="css">#user_company</locator>
+			<locator type="xpath">//input[@id='user_company']</locator>
+		</locators>
+	</element>
+	
+	<element type="button" name="login">
+		<locators>
+			<locator type="css">input[value='Log In']</locator>
+			<locator type="xpath">//input[@value='Log In']</locator>
+		</locators>
+	</element>
+	
+	<element type="text" name = "time">
+		<locators>
+			<locator type="css">span#loader_label strong</locator>
+			<locator type="xpath">//span[@id='loader_label']//strong</locator>
+		</locators>
+	</element>
+	
+</elements>

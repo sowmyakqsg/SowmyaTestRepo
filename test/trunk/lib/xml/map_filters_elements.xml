@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="checkbox" name="displa_traffic_overlay">
+			<locators>
+			    <locator type="id">display_traffic</locator>
+				<locator type="css">#display_traffic</locator>
+				<locator type="xpath">//input[@id='display_traffic']</locator>
+			</locators>
+	</element>
+	
+	<element type="button" name="close_map_filters">
+			<locators>
+				<locator type="xpath">//div[@id='mapFilterModal2']//button[text()='Close']</locator>
+			</locators>
+	</element>
+	<element type="checkbox" name="display_landmarks">
+			<locators>
+			    <locator type="id">display_landmarks_alltime</locator>
+				<locator type="css">#display_landmarks_alltime</locator>
+				<locator type="xpath">//input[@id='display_landmarks_alltime']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_nighttime_mode">
+			<locators>
+			    <locator type="id">display_nighttime_mode</locator>
+				<locator type="css">#display_nighttime_mode</locator>
+				<locator type="xpath">//input[@id='display_nighttime_mode']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_vehicle_transport_lines">
+			<locators>
+			    <locator type="id">display_vehicle_transport_lines</locator>
+				<locator type="css">#display_vehicle_transport_lines</locator>
+				<locator type="xpath">//input[@id='display_vehicle_transport_lines']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_vehicle_tracking">
+			<locators>
+			    <locator type="id">display_vehicle_tracking</locator>
+				<locator type="css">#display_vehicle_tracking</locator>
+				<locator type="xpath">//input[@id='display_vehicle_tracking']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_responding_lines">
+			<locators>
+			    <locator type="id">display_responding_lines</locator>
+				<locator type="css">#display_responding_lines</locator>
+				<locator type="xpath">//input[@id='display_responding_lines']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="show_only_available_vehicle">
+			<locators>
+			    <locator type="id">showonlyavailablevehicle</locator>
+				<locator type="css">#showonlyavailablevehicle</locator>
+				<locator type="xpath">//input[@id='showonlyavailablevehicle']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_vehicle_labels">
+			<locators>
+			    <locator type="id">display_vehicle_labels</locator>
+				<locator type="css">#display_vehicle_labels</locator>
+				<locator type="xpath">//input[@id='display_vehicle_labels']</locator>
+			</locators>
+	</element>
+	
+	<element type="checkbox" name="display_speed_labels">
+			<locators>
+			    <locator type="id">display_speed_labels</locator>
+				<locator type="css">#display_speed_labels</locator>
+				<locator type="xpath">//input[@id='display_speed_labels']</locator>
+			</locators>
+	</element>
+</elements>

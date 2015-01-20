@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+	<element type="input" name="map_view_name">
+			<locators>
+				<locator type="css">#mapViewName</locator>
+				<locator type="id">mapViewName</locator>
+				<locator type="xpath">//input[@id='mapViewName']</locator>
+			</locators>
+	</element>
+	
+	<element type="input" name="map_view_name_save">
+			<locators>
+				<locator type="xpath">//div[@class='modal-footer']//button[text()='Save']</locator>
+			</locators>
+	</element>
+</elements>

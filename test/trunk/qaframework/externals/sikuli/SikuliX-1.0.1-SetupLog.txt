@@ -1,0 +1,108 @@
+[debug (24/4/14 12:28:23 PM)] RunSetup: SikuliX Setup Build: 1.0.1 12NOV2013120000
+[debug (24/4/14 12:28:23 PM)] RunSetup: ... starting with no args given
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\CrossBrowserTestingEMTrack\sikuli\libs
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\csvn\bin\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\csvn\Python25\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Common Files\Microsoft Shared\Windows Live
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Dell\DW WLAN Card
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files (x86)\Intel\iCLS Client\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Intel\iCLS Client\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Windows\system32
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Windows
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Windows\System32\Wbem
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Windows\System32\WindowsPowerShell\v1.0\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: c:\Program Files\WIDCOMM\Bluetooth Software\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: c:\Program Files\WIDCOMM\Bluetooth Software\syswow64
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files (x86)\Windows Live\Shared
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\apache-maven-3.0.5\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\phantomjs-1.9.2-windows
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\wamp\bin\php\php5.4.16\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Python27\src\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Python27
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Python27\Scripts\
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\csvn\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files (x86)\PuTTY\plink.exe
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Oracle\VirtualBox
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: c:\Program Files\Oracle\VirtualBox\VBoxC.dll 
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\HashiCorp\Vagrant\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Java\jdk1.8.0\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\Java\jdk1.8.0\jre\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\Program Files\TortoiseSVN\bin
+[debug (24/4/14 12:28:23 PM)] RunSetup: syspath: C:\CrossBrowserTestingEMTrack\sikuli\libs
+[debug (24/4/14 12:28:26 PM)] RunSetup: Option UPDATE selected
+[debug (24/4/14 12:28:26 PM)] RunSetup: checking for newer versions
+[debug (24/4/14 12:28:55 PM)] No version info available at https://dl.dropbox.com/u/42895525/SikuliX
+[debug (24/4/14 12:28:56 PM)] RunSetup: You already have the latest version!
+[debug (24/4/14 12:28:56 PM)] RunSetup: Completed: checking for newer versions
+[debug (24/4/14 12:28:56 PM)] RunSetup: user home: C:\Users\Admin
+[debug (24/4/14 12:28:57 PM)] RunSetup: RunningSystem: Windows 6.1
+[debug (24/4/14 12:28:57 PM)] RunSetup: parent of jar/classes: C:/CrossBrowserTestingEMTrack/sikuli/
+[debug (24/4/14 12:28:57 PM)] RunSetup: RunningJava: Java 8 (amd64) 1.8.0-b132
+[debug (24/4/14 12:28:57 PM)] RunSetup: ... could not detect whether Sikuli is used the first time on this system
+[debug (24/4/14 12:29:32 PM)] FileManager: Downloading 1.0.1-1.jar having 12942 KB
+[debug (24/4/14 12:31:16 PM)] FileManager: downloaded 12942 KB to C:\CrossBrowserTestingEMTrack\sikuli\1.0.1-1.jar
+[debug (24/4/14 12:31:16 PM)] FileManager: download time: 102
+[debug (24/4/14 12:31:19 PM)] RunSetup: Download ended
+[debug (24/4/14 12:31:19 PM)] RunSetup: adding native stuff to sikuli-ide.jar
+[debug (24/4/14 12:31:19 PM)] FileManager: buildJar: C:\CrossBrowserTestingEMTrack\sikuli\sikuli-temp.jar
+[debug (24/4/14 12:31:19 PM)] FileManager: buildJar: adding: C:\CrossBrowserTestingEMTrack\sikuli\sikuli-ide.jar
+[debug (24/4/14 12:31:23 PM)] FileManager: buildJar: adding: C:\CrossBrowserTestingEMTrack\sikuli\sikuli-setup.jar
+[debug (24/4/14 12:31:27 PM)] FileManager: buildJar: completed
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: export: Trying to access package
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: export: Accessing jar: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-setup.jar
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: export: Found 1 Files in Commands/windows/runIDE.cmd
+[debug (24/4/14 12:31:27 PM)] RunSetup: trying to set up the environment
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: check: we are running on arch: amd64
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: check: using Java at: C:/Program Files/Java/jdk1.8.0/jre/
+[error (24/4/14 12:31:27 PM)] ResourceLoaderBasic: check: No valid libs path available until now!
+[action (24/4/14 12:31:27 PM)] ResourceLoaderBasic: check: Please wait! Trying to extract libs to jar parent folder: C:/CrossBrowserTestingEMTrack/sikuli/
+[debug (24/4/14 12:31:27 PM)] ResourceLoaderBasic: extractLibs: Accessing jar: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-setup.jar
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: extractLibs: Found 14 Files in META-INF/libs/windows/libs64/
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: export: Trying to access package
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: export: Accessing jar: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-setup.jar
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: export: Found 0 Files in META-INF/libs/tessdata
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: checkLibsDir: C:\CrossBrowserTestingEMTrack\sikuli\libs
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: loadLib: WinUtil
+[debug (24/4/14 12:31:28 PM)] ResourceLoaderBasic: loadLib: Found: WinUtil
+[debug (24/4/14 12:31:30 PM)] ResourceLoaderBasic: loadLib: Now loaded: WinUtil
+[debug (24/4/14 12:31:30 PM)] ResourceLoaderBasic: checkLibsDir: Using libs at: C:\CrossBrowserTestingEMTrack\sikuli\libs
+[debug (24/4/14 12:31:30 PM)] ResourceLoaderBasic: export: Using this as OCR directory (tessdata) too
+[debug (24/4/14 12:31:33 PM)] RunSetup: Trying to run functional test: running Jython statements via SikuliScript
+[debug (24/4/14 12:31:33 PM)] SikuliX: before adding to classpath: C:\CrossBrowserTestingEMTrack\sikuli\sikuli-ide.jar
+[debug (24/4/14 12:31:33 PM)] SikuliX: 0: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-setup.jar
+[debug (24/4/14 12:31:33 PM)] SikuliX: after adding to classpath
+[debug (24/4/14 12:31:33 PM)] SikuliX: 0: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-setup.jar
+[debug (24/4/14 12:31:33 PM)] SikuliX: 1: file:/C:/CrossBrowserTestingEMTrack/sikuli/sikuli-ide.jar
+[debug (24/4/14 12:31:33 PM)] RunSetup: trying to run testSetup.sikuli using SikuliScript
+[debug (24/4/14 12:31:36 PM)] SikuliX Jython Support Build: 1.0.1 12SEP2013160248
+[debug (24/4/14 12:31:41 PM)] JythonScriptRunner: : executeScriptHeader: adding SikuliX Lib path to sys.path
+C:\CrossBrowserTestingEMTrack\sikuli\sikuli-setup.jar\Lib
+[debug (24/4/14 12:31:44 PM)] Jython: sikuli: __init__: entering
+[debug (24/4/14 12:31:45 PM)] Jython: sikuli: Sikuli: entering
+[debug (24/4/14 12:31:46 PM)] Jython: sikuli: Sikuli: constants
+[debug (24/4/14 12:31:46 PM)] Jython: sikuli: Sikuli: import Region
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import Screen
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: Env.addHotkey
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import Match
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import Pattern
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import Location
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import ScreenUnion
+[debug (24/4/14 12:31:47 PM)] Jython: sikuli: Sikuli: import Finder
+[debug (24/4/14 12:31:47 PM)] ResourceLoaderBasic: loadLib: VisionProxy
+[debug (24/4/14 12:31:47 PM)] ResourceLoaderBasic: loadLib: Found: VisionProxy
+[debug (24/4/14 12:31:51 PM)] ResourceLoaderBasic: loadLib: Now loaded: VisionProxy
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: import App
+[debug (24/4/14 12:31:51 PM)] ResourceLoaderBasic: loadLib: Is already loaded: WinUtil
+[debug (24/4/14 12:31:51 PM)] Screen: initScreens: basic initialization (1 Screen(s) found)
+[debug (24/4/14 12:31:51 PM)] *** monitor configuration (primary: 0) ***
+[debug (24/4/14 12:31:51 PM)] Screen 0: S(0)[0,0 1366x768]
+[debug (24/4/14 12:31:51 PM)] *** end monitor configuration ***
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: import Key
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: import from Basics
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: import from compare
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: init SikuliImporter
+[debug (24/4/14 12:31:51 PM)] Jython: sikuli: Sikuli: import SikuliScript
+[debug (24/4/14 12:31:51 PM)] Jython: init SCREEN as ()
+[debug (24/4/14 12:31:52 PM)] Sikuli-Script startup: 15150
+[debug (24/4/14 12:31:59 PM)] RunSetup: ... SikuliX Setup seems to have ended successfully ;-)
